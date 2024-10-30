@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('colaboradores', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome');
-            $table->string('titulacao')->nullable();
-            $table->foreignId('chamada_id')->constrained('chamadas');
-            $table->timestamps();
+        Schema::create('chamada_tag', function (Blueprint $table) {
+            $table->foreignId('chamada_id')->constrained('chamadas')->onDelete('cascade');
+            $table->foreignId('tag_id')->constrained('tags')->onDelete('cascade');
+            $table->primary(['chamada_id', 'tag_id']);
         });
     }
 
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('colaboradores');
+        Schema::dropIfExists('chamada_tag');
     }
 };

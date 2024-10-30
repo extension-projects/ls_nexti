@@ -17,7 +17,6 @@ return new class extends Migration
             $table->text('resumo');
             $table->foreignId('chamada_id')->constrained('chamadas');
             $table->foreignId('autor_id')->constrained('participantes');
-            $table->foreignId('colaborador_id')->nullable()->constrained('colaboradores');
             $table->foreignId('categoria_id')->constrained('categorias');
             $table->timestamps();
         });
