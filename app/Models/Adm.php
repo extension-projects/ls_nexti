@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Adm extends Model
 {
     use HasFactory;
+
+    protected $table = 'adms';
+
+    protected $fillable = [
+        'user_id',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
