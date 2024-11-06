@@ -11,11 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('chamadas', function (Blueprint $table) {
+        Schema::create('publicacoes', function (Blueprint $table) {
             $table->id();
-            $table->string('titulo_chamada');
+            $table->string('titulo');
             $table->string('descricao');
-            $table->date('prazo');
+            $table->string('doi', 255)->nullable();
+            $table->binary('arquivo_publicacao')->nullable();
+            $table->string('organizadores');
+            $table->string('link_compra', 255)->nullable();
             $table->foreignId('adm_id')->constrained('adms');
             $table->timestamps();
         });
@@ -26,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('chamadas');
+        Schema::dropIfExists('publicacoes');
     }
 };

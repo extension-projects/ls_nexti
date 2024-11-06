@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('categoria_id')->constrained('categorias');
             $table->foreignId('tag_id')->constrained('tags');
             $table->foreignId('submissao_id')->constrained('submissoes');
+            $table->foreignId('publicacao_id')->constrained('publicacoes');
             $table->timestamps();
         });
     }

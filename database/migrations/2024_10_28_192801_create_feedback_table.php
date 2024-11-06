@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
-            $table->text('mensagem');
+            $table->text('comentario');
+            $table->boolean('situacao')->default(false);
             $table->integer('nota');
             $table->foreignId('autor_id')->constrained('participantes');
             $table->timestamps();
