@@ -19,4 +19,9 @@ class Categoria extends Model
     {
         return $this->hasMany(Submissao::class);
     }
+
+    public function publicacoes()
+    {
+        return $this->hasMany(Publicacao::class);
+    }
 }
