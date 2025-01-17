@@ -1,11 +1,13 @@
+import { Footer } from "../components/footer";
 import { Header } from "../components/header";
-import { Navigation } from "../components/Navigation.jsx";
+import { Navigation } from "../components/navigation";
 
 function Home () {
     return (
         <>
             <Header />
             <Navigation />
+            <Footer />
         </>
     )
 }
