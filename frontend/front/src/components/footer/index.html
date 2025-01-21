@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                background-color: #ff0000;
+                margin: 0px;
+            }
+            header {
+                background: #ffffff;
+                width: 100vw;
+                height: 100px;
+            }
+
+            header .content {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 0px 30px;
+            }
+
+            header .logo {
+                background: #ff6a00;
+                width: 200px;
+                height: 50px;
+            }
+
+            header select {
+                border-radius: 10px;
+                width: 300px;
+                height: 40px;
+            }
+
+            header input {
+                border-radius: 10px;
+                width: 300px;
+                height: 40px;
+
+                border-width: 1px;
+            }
+
+            /*
+                __________.__                 
+                \______   \  |  __ __   ____  
+                |    |  _/  | |  |  \_/ __ \ 
+                |    |   \  |_|  |  /\  ___/ 
+                |______  /____/____/  \___  >
+                        \/                 \/ 
+            */
+
+            .blue_bar .content {
+                padding: 0px 30px;
+
+                width: 100%;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .blue_bar {
+                background: #213e60;
+                width: 100vw;
+                height: 50px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .blue_bar ul {
+                list-style-type: none;
+
+                width: 100%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .blue_bar ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            /*
+                __________                                    
+                \______   \_____    ____   ____   ___________ 
+                |    |  _/\__  \  /    \ /    \_/ __ \_  __ \
+                |    |   \ / __ \|   |  \   |  \  ___/|  | \/
+                |______  /(____  /___|  /___|  /\___  >__|   
+                        \/      \/     \/     \/     \/     
+            */
+
+            .banner {
+                background: #00174a;
+                width: 100vw;
+                height: 400px;
+            }
+
+            /*
+                ___.                  __                                
+                \_ |__   ____   ____ |  | __ ____ _____    ______ ____  
+                | __ \ /  _ \ /  _ \|  |/ // ___\\__  \  /  ___// __ \ 
+                | \_\ (  <_> |  <_> )    <\  \___ / __ \_\___ \\  ___/ 
+                |___  /\____/ \____/|__|_ \\___  >____  /____  >\___  >
+                    \/                   \/    \/     \/     \/     \/ 
+            */
+
+            .bookcase {
+                background: #e5ff00;
+                width: 100vw;
+                height: 100px;
+            }
+
+            /*
+                _______   ____   ____  ____   _____   _____      
+                \_  __ \_/ __ \_/ ___\/  _ \ /     \ /     \     
+                |  | \/\  ___/\  \__(  <_> )  Y Y  \  Y Y  \    
+                |__|    \___  >\___  >____/|__|_|  /__|_|  / /\ 
+                            \/     \/            \/      \/  \/ 
+            */
+
+            .recommendations {
+                background: #ffffff;
+                width: 100vw;
+                height: 100px;
+            }
+
+            /*
+                __________                       .___
+                \______   \ _________ _______  __| _/
+                |    |  _//  _ \__  \\_  __ \/ __ | 
+                |    |   (  <_> ) __ \|  | \/ /_/ | 
+                |______  /\____(____  /__|  \____ | 
+                        \/           \/           \/ 
+            */
+
+            .editorial_board {
+                background: #ff6a00;
+                width: 100vw;
+                height: 100px;
+            }
+
+            /*
+                ___________            __                
+                \_   _____/___   _____/  |_  ___________ 
+                |    __)/  _ \ /  _ \   __\/ __ \_  __ \
+                |     \(  <_> |  <_> )  | \  ___/|  | \/
+                \___  / \____/ \____/|__|  \___  >__|   
+                    \/                         \/    
+            */
+
+            footer {
+                background: #00174a;
+                width: 100vw;
+                height: 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="content">
+                <div class="logo"></div>
+
+                <select name="" id="">
+                    <option value="">algo</option>
+                </select>
+
+                <input type="text" placeholder="Pesquise por..." />
+
+                <div class="login">
+                    <img src="" alt="" />
+
+                    <p>
+                        Bem vindo visitante,<br />
+                        <a href="#">Faça login</a> ou
+                        <a href="#">Cadastre-se</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="blue_bar">
+            <div class="content">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Institucional</a></li>
+                    <li><a href="">Estante</a></li>
+                    <li><a href="">Serviço</a></li>
+                    <li><a href="">Chamadas abertas</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="text">
+                <h1>Publique seu <br />livro conosco</h1>
+                <p>
+                    Faça parte de uma comunidade <br />
+                    apaixonada pela palavra escrita. Nossa <br />
+                    equipe editorial está pronta para elevar <br />
+                    seu trabalho a novos horizontes
+                </p>
+
+                <button>Saiba Mais</button>
+            </div>
+        </div>
+
+        <div class="bookcase"></div>
+
+        <div class="recommendations"></div>
+
+        <div class="editorial_board"></div>
+
+        <footer></footer>
+    </body>
+</html>
