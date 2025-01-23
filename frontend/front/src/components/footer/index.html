@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -106,6 +106,24 @@
                 height: 400px;
             }
 
+            .banner .content {
+                padding: 20px 30px;
+            }
+
+            .banner .content .text {
+                color: #fff;
+            }
+
+            .banner .content .text button {
+                background: #eb973e;
+                color: #000000;
+                border-radius: 5px;
+                border-style: none;
+
+                width: 200px;
+                height: 30px;
+            }
+
             /*
                 ___.                  __                                
                 \_ |__   ____   ____ |  | __ ____ _____    ______ ____  
@@ -116,9 +134,64 @@
             */
 
             .bookcase {
-                background: #e5ff00;
+                background: #ededed;
                 width: 100vw;
-                height: 100px;
+                height: 600px;
+            }
+
+            .bookcase .content {
+                display: flex;
+                flex-direction: column;
+
+                height: 100%;
+
+                align-items: center;
+                justify-content: center;
+            }
+
+            .bookcase .content .pictures {
+                display: flex;
+                flex-direction: row;
+
+                width: 800px;
+
+                justify-content: space-between;
+                background: #ededed;
+            }
+
+            .bookcase .content .pictures .picture {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+                align-items: center;
+
+                background: #fff;
+
+                width: 250px;
+                height: 300px;
+
+                border-radius: 15px;
+            }
+
+            .bookcase .content h1 {
+                text-align: center;
+            }
+
+            .bookcase .content p {
+                text-align: center;
+            }
+
+            .bookcase .content button {
+                margin-top: 20px;
+
+                background-color: #ffb363;
+                border-color: #eb973e;
+                border-style: solid;
+                border-radius: 10px;
+
+                width: 300px;
+                height: 30px;
             }
 
             /*
@@ -130,9 +203,9 @@
             */
 
             .recommendations {
-                background: #ffffff;
+                background: #e9e9e9;
                 width: 100vw;
-                height: 100px;
+                height: 500px;
             }
 
             /*
@@ -203,22 +276,67 @@
         </div>
 
         <div class="banner">
-            <div class="text">
-                <h1>Publique seu <br />livro conosco</h1>
-                <p>
-                    Faça parte de uma comunidade <br />
-                    apaixonada pela palavra escrita. Nossa <br />
-                    equipe editorial está pronta para elevar <br />
-                    seu trabalho a novos horizontes
-                </p>
+            <div class="content">
+                <div class="text">
+                    <h1>Publique seu <br />livro conosco</h1>
+                    <p>
+                        Faça parte de uma comunidade <br />
+                        apaixonada pela palavra escrita. Nossa <br />
+                        equipe editorial está pronta para elevar <br />
+                        seu trabalho a novos horizontes
+                    </p>
 
-                <button>Saiba Mais</button>
+                    <button>Saiba Mais</button>
+                </div>
             </div>
         </div>
 
-        <div class="bookcase"></div>
+        <div class="bookcase">
+            <div class="content">
+                <h1>VISITE NOSSA ESTANTE VIRTUAL</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus libero illum cum nostrum! <br />
+                    Voluptatum ut, vero, cum quibusdam illum impedit ratione,
+                    blanditiis quas <br />
+                    consequuntur error perferendis? Eligendi vitae consequatur
+                    quo?
+                </p>
 
-        <div class="recommendations"></div>
+                <div class="pictures">
+                    <div class="picture">
+                        <img src="" alt="" />
+                        <p>Titulo primeiro livro</p>
+                        <p><a href="#">Ver mais</a></p>
+                    </div>
+
+                    <div class="picture">
+                        <img src="" alt="" />
+                        <p>Titulo primeiro livro</p>
+                        <p><a href="#">Ver mais</a></p>
+                    </div>
+
+                    <div class="picture">
+                        <img src="" alt="" />
+                        <p>Titulo primeiro livro</p>
+                        <p><a href="#">Ver mais</a></p>
+                    </div>
+                </div>
+
+                <button>Encontre outros titulos</button>
+            </div>
+        </div>
+
+        <div class="recommendations">
+            <div class="content">
+                <h1>QUEM CONHECE RECOMENDA</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+        </div>
 
         <div class="editorial_board"></div>
 
