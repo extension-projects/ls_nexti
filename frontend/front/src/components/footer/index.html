@@ -208,6 +208,44 @@
                 height: 500px;
             }
 
+            .recommendations .content {
+                display: flex;
+                flex-direction: column;
+
+                height: 100%;
+                width: 100%;
+
+                align-items: center;
+                justify-content: start;
+
+                padding: 0px 30px;
+            }
+
+            .recommendations .content p {
+                text-align: center;
+            }
+
+            .recommendations .content .recommendation_framework {
+                display: flex;
+                flex-direction: row;
+
+                justify-content: space-evenly;
+
+                width: 100%;
+                height: 300px;
+            }
+
+            .recommendations
+                .content
+                .recommendation_framework
+                .recommendation {
+                width: 300px;
+                height: 180px;
+
+                border-radius: 15px;
+                background: #fff;
+            }
+
             /*
                 __________                       .___
                 \______   \ _________ _______  __| _/
@@ -332,9 +370,47 @@
                 <h1>QUEM CONHECE RECOMENDA</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
+                    do eiusmod tempor <br />incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam.
                 </p>
+
+                <div class="recommendation_framework">
+                    <div class="recommendation">
+                        <div class="user">
+                            <img src="" alt="" />
+                            <h1>Name</h1>
+                            <h2>Ocupation</h2>
+                        </div>
+                        <p>Avaliation</p>
+                    </div>
+
+                    <div class="recommendation">
+                        <div class="user">
+                            <img src="" alt="" />
+                            <h1>Name</h1>
+                            <h2>Ocupation</h2>
+                        </div>
+                        <p>Avaliation</p>
+                    </div>
+
+                    <div class="recommendation">
+                        <div class="user">
+                            <img src="" alt="" />
+                            <h1>Name</h1>
+                            <h2>Ocupation</h2>
+                        </div>
+                        <p>Avaliation</p>
+                    </div>
+
+                    <div class="recommendation">
+                        <div class="user">
+                            <img src="" alt="" />
+                            <h1>Name</h1>
+                            <h2>Ocupation</h2>
+                        </div>
+                        <p>Avaliation</p>
+                    </div>
+                </div>
             </div>
         </div>
 
