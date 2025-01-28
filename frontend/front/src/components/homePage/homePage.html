@@ -3,11 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Home Page</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <style>
             body {
                 background-color: #ff0000;
                 margin: 0px;
+
+                font-family: "Work Sans", sans-serif;
             }
             header {
                 background: #ffffff;
@@ -25,9 +32,12 @@
             }
 
             header .logo {
-                background: #ff6a00;
                 width: 200px;
                 height: 50px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             header select {
@@ -101,9 +111,12 @@
             */
 
             .banner {
-                background: #00174a;
+                background-image: url(Imgs/BannerImage.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
                 width: 100vw;
-                height: 400px;
+                height: 600px;
             }
 
             .banner .content {
@@ -115,13 +128,27 @@
             }
 
             .banner .content .text button {
-                background: #eb973e;
+                background: #ffb363;
                 color: #000000;
-                border-radius: 5px;
-                border-style: none;
+                border-radius: 16px;
+                border-style: solid;
+                border-color: #eb973e;
+                font-size: 21px;
 
-                width: 200px;
-                height: 30px;
+                width: 467px;
+                height: 60px;
+
+                font-weight: 600;
+            }
+
+            .banner h1 {
+                font-size: 60px;
+                font-weight: 500;
+            }
+
+            .banner p {
+                font-size: 26px;
+                font-weight: 400;
             }
 
             /*
@@ -136,7 +163,7 @@
             .bookcase {
                 background: #ededed;
                 width: 100vw;
-                height: 600px;
+                height: 800px;
             }
 
             .bookcase .content {
@@ -147,13 +174,15 @@
 
                 align-items: center;
                 justify-content: center;
+
+                padding: 0px 30px;
             }
 
             .bookcase .content .pictures {
                 display: flex;
                 flex-direction: row;
 
-                width: 800px;
+                width: 100%;
 
                 justify-content: space-between;
                 background: #ededed;
@@ -168,10 +197,15 @@
 
                 background: #fff;
 
-                width: 250px;
-                height: 300px;
+                width: 363px;
+                height: 385px;
 
                 border-radius: 15px;
+            }
+
+            .bookcase .picture img {
+                width: 184px;
+                height: 259px;
             }
 
             .bookcase .content h1 {
@@ -256,9 +290,24 @@
             */
 
             .editorial_board {
-                background: #ff6a00;
+                background: #ededed;
                 width: 100vw;
-                height: 100px;
+                height: 300px;
+            }
+
+            .editorial_board .content {
+                padding: 10px 30px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .editorial_board .content .figure {
+                border-radius: 15px;
+                width: 500px;
+                height: 250px;
+                background-image: url(https://www.dipilatti.com.br/view/resize/1920x1080/produto/1962/06b3cda72637c297d8b47ed6de87d0d3.jpg);
             }
 
             /*
@@ -281,7 +330,11 @@
     <body>
         <header>
             <div class="content">
-                <div class="logo"></div>
+                <div class="logo">
+                    <figure>
+                        <img src="Imgs/Logo.svg" alt="" />
+                    </figure>
+                </div>
 
                 <select name="" id="">
                     <option value="">algo</option>
@@ -343,20 +396,20 @@
 
                 <div class="pictures">
                     <div class="picture">
-                        <img src="" alt="" />
-                        <p>Titulo primeiro livro</p>
+                        <img src="Imgs/bookCover(1).png" alt="" />
+                        <p>The Light Beyond The Garden Wall</p>
                         <p><a href="#">Ver mais</a></p>
                     </div>
 
                     <div class="picture">
-                        <img src="" alt="" />
-                        <p>Titulo primeiro livro</p>
+                        <img src="Imgs/bookCover(2).png" alt="" />
+                        <p>Soul</p>
                         <p><a href="#">Ver mais</a></p>
                     </div>
 
                     <div class="picture">
-                        <img src="" alt="" />
-                        <p>Titulo primeiro livro</p>
+                        <img src="Imgs/bookCover(3).png" alt="" />
+                        <p>The book of art</p>
                         <p><a href="#">Ver mais</a></p>
                     </div>
                 </div>
@@ -414,7 +467,21 @@
             </div>
         </div>
 
-        <div class="editorial_board"></div>
+        <div class="editorial_board">
+            <div class="content">
+                <div class="text">
+                    <h1>CORPO EDITORIAL</h1>
+                    <p>
+                        Conheça a equipe por trás das palavras! Nosso <br />
+                        corpo editorial é a engrenagem que impulsiona a
+                        <br />qualidade e a precisão em cada texto.
+                    </p>
+                    <button>Saiba Mais</button>
+                </div>
+
+                <div class="figure"></div>
+            </div>
+        </div>
 
         <footer></footer>
     </body>
