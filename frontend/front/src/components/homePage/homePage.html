@@ -55,12 +55,12 @@
             }
 
             /*
-                __________.__                 
-                \______   \  |  __ __   ____  
-                |    |  _/  | |  |  \_/ __ \ 
-                |    |   \  |_|  |  /\  ___/ 
+                __________.__
+                \______   \  |  __ __   ____
+                |    |  _/  | |  |  \_/ __ \
+                |    |   \  |_|  |  /\  ___/
                 |______  /____/____/  \___  >
-                        \/                 \/ 
+                        \/                 \/
             */
 
             .blue_bar .content {
@@ -102,12 +102,12 @@
             }
 
             /*
-                __________                                    
-                \______   \_____    ____   ____   ___________ 
+                __________
+                \______   \_____    ____   ____   ___________
                 |    |  _/\__  \  /    \ /    \_/ __ \_  __ \
                 |    |   \ / __ \|   |  \   |  \  ___/|  | \/
-                |______  /(____  /___|  /___|  /\___  >__|   
-                        \/      \/     \/     \/     \/     
+                |______  /(____  /___|  /___|  /\___  >__|
+                        \/      \/     \/     \/     \/
             */
 
             .banner {
@@ -152,12 +152,12 @@
             }
 
             /*
-                ___.                  __                                
-                \_ |__   ____   ____ |  | __ ____ _____    ______ ____  
-                | __ \ /  _ \ /  _ \|  |/ // ___\\__  \  /  ___// __ \ 
-                | \_\ (  <_> |  <_> )    <\  \___ / __ \_\___ \\  ___/ 
+                ___.                  __
+                \_ |__   ____   ____ |  | __ ____ _____    ______ ____
+                | __ \ /  _ \ /  _ \|  |/ // ___\\__  \  /  ___// __ \
+                | \_\ (  <_> |  <_> )    <\  \___ / __ \_\___ \\  ___/
                 |___  /\____/ \____/|__|_ \\___  >____  /____  >\___  >
-                    \/                   \/    \/     \/     \/     \/ 
+                    \/                   \/    \/     \/     \/     \/
             */
 
             .bookcase {
@@ -224,16 +224,23 @@
                 border-style: solid;
                 border-radius: 10px;
 
-                width: 300px;
-                height: 30px;
+                font-size: 21px;
+                font-weight: 600;
+
+                width: 426px;
+                height: 61px;
+            }
+
+            .bookcase .pictures a {
+                color: #dc6a03;
             }
 
             /*
-                _______   ____   ____  ____   _____   _____      
-                \_  __ \_/ __ \_/ ___\/  _ \ /     \ /     \     
-                |  | \/\  ___/\  \__(  <_> )  Y Y  \  Y Y  \    
-                |__|    \___  >\___  >____/|__|_|  /__|_|  / /\ 
-                            \/     \/            \/      \/  \/ 
+                _______   ____   ____  ____   _____   _____
+                \_  __ \_/ __ \_/ ___\/  _ \ /     \ /     \
+                |  | \/\  ___/\  \__(  <_> )  Y Y  \  Y Y  \
+                |__|    \___  >\___  >____/|__|_|  /__|_|  / /\
+                            \/     \/            \/      \/  \/
             */
 
             .recommendations {
@@ -256,7 +263,6 @@
             }
 
             .recommendations .content p {
-                text-align: center;
             }
 
             .recommendations .content .recommendation_framework {
@@ -265,7 +271,7 @@
 
                 justify-content: space-evenly;
 
-                width: 100%;
+                width: 2500px;
                 height: 300px;
             }
 
@@ -273,20 +279,67 @@
                 .content
                 .recommendation_framework
                 .recommendation {
-                width: 300px;
-                height: 180px;
+                width: 427px;
+                height: 248px;
 
                 border-radius: 15px;
                 background: #fff;
             }
 
+            .recommendation .userPhoto {
+                background: #000;
+                width: 72px;
+                height: 72px;
+
+                border-radius: 50px;
+                border-style: solid;
+                border-color: #eb973e;
+
+                margin-right: 10px;
+            }
+
+            .recommendation .user {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .recommendation .user h1 {
+                font-size: 21px;
+                font-weight: 500;
+            }
+
+            .recommendation .user h2 {
+                font-size: 17px;
+                font-weight: 400;
+
+                color: #565a61;
+
+                margin-top: -10px;
+            }
+            .recommendation .recommContent {
+                padding: 15px 15px;
+            }
+
+            /*
+                <div class="recommendation">
+                        <div class="user">
+                            <div class="userPhoto"></div>
+                            <div class="userInfo">
+                                <h1>Name</h1>
+                                <h2>Ocupation</h2>
+                            </div>
+                        </div>
+                        <p>Avaliation</p>
+                    </div>
+            */
+
             /*
                 __________                       .___
                 \______   \ _________ _______  __| _/
-                |    |  _//  _ \__  \\_  __ \/ __ | 
-                |    |   (  <_> ) __ \|  | \/ /_/ | 
-                |______  /\____(____  /__|  \____ | 
-                        \/           \/           \/ 
+                |    |  _//  _ \__  \\_  __ \/ __ |
+                |    |   (  <_> ) __ \|  | \/ /_/ |
+                |______  /\____(____  /__|  \____ |
+                        \/           \/           \/
             */
 
             .editorial_board {
@@ -310,13 +363,40 @@
                 background-image: url(https://www.dipilatti.com.br/view/resize/1920x1080/produto/1962/06b3cda72637c297d8b47ed6de87d0d3.jpg);
             }
 
+            .editorial_board button {
+                width: 241px;
+                height: 60px;
+                border-radius: 16px;
+                border-style: none;
+
+                font-size: 21px;
+                font-weight: 600;
+
+                color: #2e2e2e;
+
+                background: #eb973e;
+            }
+
+            .editorial_board p {
+                color: #565a61;
+            }
+
+            .editorial_board .firsttitle {
+                margin-bottom: -20px;
+                color: #2e2e2e;
+            }
+
+            .editorial_board h1 {
+                color: #213e60;
+            }
+
             /*
-                ___________            __                
-                \_   _____/___   _____/  |_  ___________ 
+                ___________            __
+                \_   _____/___   _____/  |_  ___________
                 |    __)/  _ \ /  _ \   __\/ __ \_  __ \
                 |     \(  <_> |  <_> )  | \  ___/|  | \/
-                \___  / \____/ \____/|__|  \___  >__|   
-                    \/                         \/    
+                \___  / \____/ \____/|__|  \___  >__|
+                    \/                         \/
             */
 
             footer {
@@ -428,40 +508,68 @@
                 </p>
 
                 <div class="recommendation_framework">
-                    <div class="recommendation">
-                        <div class="user">
-                            <img src="" alt="" />
-                            <h1>Name</h1>
-                            <h2>Ocupation</h2>
+                    <div class="recommendation" style="margin-left: 600px">
+                        <div class="recommContent">
+                            <div class="user">
+                                <div class="userPhoto"></div>
+                                <div class="userInfo">
+                                    <h1>Haruka Nayua</h1>
+                                    <h2>Engenheira de Software</h2>
+                                </div>
+                            </div>
+                            <p>
+                                " A equipe editorial não apenas poliu meu
+                                trabalho, mas também o elevou a novos patamares
+                                de excelência!"
+                            </p>
                         </div>
-                        <p>Avaliation</p>
                     </div>
 
                     <div class="recommendation">
-                        <div class="user">
-                            <img src="" alt="" />
-                            <h1>Name</h1>
-                            <h2>Ocupation</h2>
+                        <div class="recommContent">
+                            <div class="user">
+                                <div class="userPhoto"></div>
+                                <div class="userInfo">
+                                    <h1>Vinicius Cardoso</h1>
+                                    <h2>Analista de Sistemas</h2>
+                                </div>
+                            </div>
+                            <p>
+                                " Em pouco tempo com a editora, descobri muito
+                                apoio e expertise. Cada interação foi como uma
+                                aula mestra em refinamento editorial"
+                            </p>
                         </div>
-                        <p>Avaliation</p>
                     </div>
 
                     <div class="recommendation">
-                        <div class="user">
-                            <img src="" alt="" />
-                            <h1>Name</h1>
-                            <h2>Ocupation</h2>
+                        <div class="recommContent">
+                            <div class="user">
+                                <div class="userPhoto"></div>
+                                <div class="userInfo">
+                                    <h1>Matheus Matoá</h1>
+                                    <h2>Cirurgião cardiovascular</h2>
+                                </div>
+                            </div>
+                            <p>
+                                " A equipe editorial não apenas poliu meu
+                                trabalho, mas também o elevou a novos patamares
+                                de excelência!"
+                            </p>
                         </div>
-                        <p>Avaliation</p>
                     </div>
 
                     <div class="recommendation">
-                        <div class="user">
-                            <img src="" alt="" />
-                            <h1>Name</h1>
-                            <h2>Ocupation</h2>
+                        <div class="recommContent">
+                            <div class="user">
+                                <div class="userPhoto"></div>
+                                <div class="userInfo">
+                                    <h1>Name</h1>
+                                    <h2>Ocupation</h2>
+                                </div>
+                            </div>
+                            <p>Avaliation</p>
                         </div>
-                        <p>Avaliation</p>
                     </div>
                 </div>
             </div>
@@ -470,6 +578,7 @@
         <div class="editorial_board">
             <div class="content">
                 <div class="text">
+                    <h1 class="firsttitle">CONHEÇA NOSSO</h1>
                     <h1>CORPO EDITORIAL</h1>
                     <p>
                         Conheça a equipe por trás das palavras! Nosso <br />
