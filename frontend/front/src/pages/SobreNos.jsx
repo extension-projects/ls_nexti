@@ -13,7 +13,7 @@ function SobreNos () {
             <Header />
             <Navigation />
             <TitlePage title={"Sobre nós"} />
-            <section className="container">
+            <section className="container-sobrenos">
                 <div >
                     <h1>Quem somos</h1>
                     <p>Somos a Learn Skills, uma editora acadêmica dedicada à excelência no desenvolvimento e na disseminação do conhecimento em diversas áreas do saber. Nossa missão é criar e disponibilizar materiais de alta qualidade que não apenas inspirem o aprendizado, mas também contribuam significativamente para o avanço do conhecimento em nossa sociedade.</p>

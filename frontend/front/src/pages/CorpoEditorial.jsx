@@ -11,7 +11,7 @@ function CorpoEditorial () {
             <Header />
             <Navigation />
             <TitlePage title={"Corpo Editorial"} />
-            <section>
+            <section className="container-editorial">
                     <div className="top">
                         <h2 className="title">Editores Chefes</h2>
                         <p className="chief-editor"><a href="#">FABRÍCIO CARNEIRO</a></p>
