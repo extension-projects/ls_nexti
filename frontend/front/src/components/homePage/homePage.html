@@ -32,7 +32,7 @@
             }
 
             header .logo {
-                width: 200px;
+                width: 300px;
                 height: 50px;
 
                 display: flex;
@@ -42,16 +42,20 @@
 
             header select {
                 border-radius: 10px;
-                width: 300px;
+                width: 25vw;
                 height: 40px;
             }
 
             header input {
                 border-radius: 10px;
-                width: 300px;
+                width: 25vw;
                 height: 40px;
 
                 border-width: 1px;
+            }
+
+            header a {
+                color: #213e60;
             }
 
             /*
@@ -221,10 +225,11 @@
 
                 background-color: #ffb363;
                 border-color: #eb973e;
+                color: #2e2e2e;
                 border-style: solid;
                 border-radius: 10px;
 
-                font-size: 21px;
+                font-size: 18px;
                 font-weight: 600;
 
                 width: 426px;
@@ -321,19 +326,6 @@
             }
 
             /*
-                <div class="recommendation">
-                        <div class="user">
-                            <div class="userPhoto"></div>
-                            <div class="userInfo">
-                                <h1>Name</h1>
-                                <h2>Ocupation</h2>
-                            </div>
-                        </div>
-                        <p>Avaliation</p>
-                    </div>
-            */
-
-            /*
                 __________                       .___
                 \______   \ _________ _______  __| _/
                 |    |  _//  _ \__  \\_  __ \/ __ |
@@ -345,7 +337,7 @@
             .editorial_board {
                 background: #ededed;
                 width: 100vw;
-                height: 300px;
+                height: 500px;
             }
 
             .editorial_board .content {
@@ -357,10 +349,13 @@
             }
 
             .editorial_board .content .figure {
-                border-radius: 15px;
-                width: 500px;
-                height: 250px;
-                background-image: url(https://www.dipilatti.com.br/view/resize/1920x1080/produto/1962/06b3cda72637c297d8b47ed6de87d0d3.jpg);
+                border-radius: 26px;
+                width: 585px;
+                height: 360px;
+                background-image: url(Imgs/teamPhoto.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             .editorial_board button {
@@ -388,6 +383,13 @@
 
             .editorial_board h1 {
                 color: #213e60;
+            }
+
+            .editorial_board .text {
+                margin-top: 50px;
+            }
+            .editorial_board .figure {
+                margin-top: 50px;
             }
 
             /*
@@ -511,7 +513,7 @@
                     <div class="recommendation" style="margin-left: 600px">
                         <div class="recommContent">
                             <div class="user">
-                                <div class="userPhoto"></div>
+                                <div class="userPhoto" style="background-image: url(Imgs/userPhoto\(1\).png);"></div>
                                 <div class="userInfo">
                                     <h1>Haruka Nayua</h1>
                                     <h2>Engenheira de Software</h2>
@@ -528,7 +530,7 @@
                     <div class="recommendation">
                         <div class="recommContent">
                             <div class="user">
-                                <div class="userPhoto"></div>
+                                <div class="userPhoto" style="background-image: url(Imgs/userPhoto\(2\).png);"></div>
                                 <div class="userInfo">
                                     <h1>Vinicius Cardoso</h1>
                                     <h2>Analista de Sistemas</h2>
@@ -545,7 +547,7 @@
                     <div class="recommendation">
                         <div class="recommContent">
                             <div class="user">
-                                <div class="userPhoto"></div>
+                                <div class="userPhoto" style="background-image: url(Imgs/userPhoto\(3\).png);"></div>
                                 <div class="userInfo">
                                     <h1>Matheus Matoá</h1>
                                     <h2>Cirurgião cardiovascular</h2>
@@ -562,13 +564,17 @@
                     <div class="recommendation">
                         <div class="recommContent">
                             <div class="user">
-                                <div class="userPhoto"></div>
+                                <div
+                                    class="userPhoto"
+                                    style="background-image: url(Imgs/userPhoto\(1\).png)"
+                                ></div>
                                 <div class="userInfo">
                                     <h1>Name</h1>
                                     <h2>Ocupation</h2>
                                 </div>
                             </div>
-                            <p>Avaliation</p>
+                            <p>" A equipe editorial não apenas poliu meu trabalho, mas também o elevou a novos patamares de excelência!"
+                            </p>
                         </div>
                     </div>
                 </div>
