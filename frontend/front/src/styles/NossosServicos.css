@@ -1,0 +1,7 @@
+section.container-servicos {
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column; 
+}
+
+/* quando for acessar outra classe, usar .container-servicos primeiro e as outras classes que quiser usar */
