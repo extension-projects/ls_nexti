@@ -12,69 +12,76 @@ import './style.css'
 export function Footer () {
     return (
         <footer  style={{backgroundColor: colors.brand.primary}}>
-            <div className='info'>
-                <img src={LogoFooter} alt="Logo Footer" />
-                <p>Juazeiro do Norte - CE</p>
-                <p>CEP: 63000-0001</p>
-                <div className='contact'>
-                    <img src={WhatsAppLogo} alt="WhatsApp Logo" />
-                    <p>(88) 97433-7571</p>
+            <div className='content'>
+                <div className='info'>
+                    <img src={LogoFooter} alt="Logo Footer" className='Logo'/>
+                    <p>Juazeiro do Norte - CE <br /> CEP: 63000-0001
+                    </p>
+                    <div className='contact'>
+                        <img src={WhatsAppLogo} alt="WhatsApp Logo" />
+                        <p>(88) 97433-7571</p>
+                    </div>
+                    <figure>
+                        <img src={Instagram} alt="" />
+                        <img src={WhatsApp2} alt="" />
+                        <img src={Linkedin} alt="" />
+                        <img src={Facebook} alt="" />
+                    </figure>
+                    
                 </div>
-                <figure>
-                    <img src={Instagram} alt="" />
-                    <img src={WhatsApp2} alt="" />
-                    <img src={Linkedin} alt="" />
-                    <img src={Facebook} alt="" />
-                </figure>
-                
+
+                <div className='navigations'>
+                    <div>
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Institucional</li>
+                            <li>Estante</li>
+                            <li>Serviços</li>
+                            <li>Chamadas Abertas</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Institucional</li>
+                            <li>Estante</li>
+                            <li>Serviços</li>
+                            <li>Chamadas Abertas</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Institucional</li>
+                            <li>Estante</li>
+                            <li>Serviços</li>
+                            <li>Chamadas Abertas</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4>Navegação</h4>
+                        <ul>
+                            <li>Home</li>
+                            <li>Institucional</li>
+                            <li>Estante</li>
+                            <li>Serviços</li>
+                            <li>Chamadas Abertas</li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div className='navigations'>
-                <div>
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Institucional</li>
-                        <li>Estante</li>
-                        <li>Serviços</li>
-                        <li>Chamadas Abertas</li>
-                    </ul>
-                </div>
+            <hr />
 
-                <div>
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Institucional</li>
-                        <li>Estante</li>
-                        <li>Serviços</li>
-                        <li>Chamadas Abertas</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Institucional</li>
-                        <li>Estante</li>
-                        <li>Serviços</li>
-                        <li>Chamadas Abertas</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li>Home</li>
-                        <li>Institucional</li>
-                        <li>Estante</li>
-                        <li>Serviços</li>
-                        <li>Chamadas Abertas</li>
-                    </ul>
-                </div>
-
-            </div>
+            <p>© 2020-2024 Created by Editora Learn Skills</p>
 
         </footer>
     )

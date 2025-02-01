@@ -1,11 +1,16 @@
 footer{
     color: #fff;
+    padding: 50px 50px;
+}
+
+footer .content{
     display: flex;
-    padding: 30px 50px;
 }
 
 .contact {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
@@ -22,8 +27,6 @@ figure{
     justify-content: space-between;
     width: 240px;
 
-    background: #ff0000;
-
     margin-left: 0;
 }
 
@@ -33,6 +36,9 @@ figure{
 
 footer ul li{
     list-style-type: none;
+    font-size: 17px;
+
+    margin-bottom: 10px;
 }
 
 footer ul{
@@ -45,4 +51,13 @@ footer ul{
     justify-content: space-between;
 
     width: 800px;
+}
+
+footer .Logo{
+    margin-bottom: 20px;
+}
+
+footer h4{
+    margin-bottom: 20px;
+    font-size: 21px;
 }
