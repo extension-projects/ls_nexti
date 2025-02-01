@@ -2,6 +2,55 @@ section.container-servicos {
    display: flex;
    justify-content: flex-start;
    flex-direction: column; 
+
 }
+
+.container-servicos {
+   padding: 30px 50px;
+}
+
+.container-servicos h1{
+   font-size: 51px;
+   font-weight: 400;
+
+   color: #2E2E2E;
+}
+
+.container-servicos h2{
+   font-size: 51px;
+   font-weight: 400;
+
+   color: #2E2E2E;
+}
+
+.container-servicos h3{
+   font-size: 51px;
+   font-weight: 400;
+
+   color: #2E2E2E;
+}
+
+.container-servicos p{
+   font-size: 21px;
+   font-weight: 500;
+
+   color: #565A61;
+}
+
+.container-servicos ul li{
+   font-size: 21px;
+   font-weight: 500;
+
+   color: #565A61;
+}
+
+.container-servicos a{
+   color: #565A61;
+}
+
+.container-servicos .link{
+   
+}
+
 
 /* quando for acessar outra classe, usar .container-servicos primeiro e as outras classes que quiser usar */

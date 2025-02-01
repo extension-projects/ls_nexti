@@ -28,49 +28,54 @@ export function Footer () {
                 </figure>
                 
             </div>
-            <div>
-                <h4>Navegação</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Institucional</li>
-                    <li>Estante</li>
-                    <li>Serviços</li>
-                    <li>Chamadas Abertas</li>
-                </ul>
+
+            <div className='navigations'>
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Institucional</li>
+                        <li>Estante</li>
+                        <li>Serviços</li>
+                        <li>Chamadas Abertas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Institucional</li>
+                        <li>Estante</li>
+                        <li>Serviços</li>
+                        <li>Chamadas Abertas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Institucional</li>
+                        <li>Estante</li>
+                        <li>Serviços</li>
+                        <li>Chamadas Abertas</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>Institucional</li>
+                        <li>Estante</li>
+                        <li>Serviços</li>
+                        <li>Chamadas Abertas</li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div>
-                <h4>Navegação</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Institucional</li>
-                    <li>Estante</li>
-                    <li>Serviços</li>
-                    <li>Chamadas Abertas</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Navegação</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Institucional</li>
-                    <li>Estante</li>
-                    <li>Serviços</li>
-                    <li>Chamadas Abertas</li>
-                </ul>
-            </div>
-
-            <div>
-                <h4>Navegação</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Institucional</li>
-                    <li>Estante</li>
-                    <li>Serviços</li>
-                    <li>Chamadas Abertas</li>
-                </ul>
-            </div>
         </footer>
     )
 }

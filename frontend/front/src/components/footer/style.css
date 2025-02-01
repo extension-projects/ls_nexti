@@ -1,3 +1,9 @@
+footer{
+    color: #fff;
+    display: flex;
+    padding: 30px 50px;
+}
+
 .contact {
     display: flex;
     
@@ -7,9 +13,36 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
-Footer {
+
+figure{
     display: flex;
+    justify-content: space-between;
+    width: 240px;
+
+    background: #ff0000;
+
+    margin-left: 0;
+}
+
+.info figure img{
+    width: 48px;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer ul{
+    margin-left: 0;
+    padding: 0;
+}
+
+.navigations{
+    display: flex;
+    justify-content: space-between;
+
+    width: 800px;
 }

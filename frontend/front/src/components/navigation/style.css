@@ -3,5 +3,27 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+
+    width: 100vw;
     
+}
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #EB973E;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #213E60;
+
+    height: 64px;
 }
