@@ -16,7 +16,7 @@ export function Header () {
 
       <div className='inputs'>
         <select name="" id="">
-            <option value="" disabled hidden>Buscar por todas as áreas</option>
+            <option value="">Buscar por todas as áreas</option>
             <option value="area1">Área 1</option>
             <option value="area2">Área 2</option>
             <option value="area3">Área 3</option>

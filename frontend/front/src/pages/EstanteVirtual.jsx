@@ -31,7 +31,7 @@ function EstanteVirtual () {
                         Lucas Oliveira, Rafaela Santos, Pedro Almeida, Ana Silva
                         </p>
                         <p className="doi">
-                        DOI: 10.36229/978-65-5866-371-3-CAP01
+                        DOI: <a href="#">10.36229/978-65-5866-371-3-CAP01</a>
                         </p>
 
                         <h3 className="capitulo-titulo">
@@ -43,7 +43,7 @@ function EstanteVirtual () {
                         Bruno Pereira, Carolina Lima, Daniel Oliveira, Mariana Rodrigues
                         </p>
                         <p className="doi">
-                        DOI: 10.36229/978-65-5866-371-3-CAP02
+                        DOI: <a href="#">10.36229/978-65-5866-371-3-CAP02</a>
                         </p>
                     </div>
                     ))}
