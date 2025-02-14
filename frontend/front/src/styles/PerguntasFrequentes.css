@@ -17,3 +17,10 @@
     justify-content: center;
 }
 
+.container-perguntas select{
+    width: 40vw;
+    color: black;
+    border-color: #4C86AD;
+    border-radius: 16px;
+}
+

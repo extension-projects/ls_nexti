@@ -21,15 +21,15 @@ function PoliticaDePrivacidade () {
                 <section className="section">
                     <h2 className="subtitle">Coleta de Informações:</h2>
                     <div className="content">
-                    <h3 className="subsubtitle">Informações fornecidas por você:</h3>
                     <p>
+                        <strong>Informações fornecidas por você: </strong>
                         Podemos coletar informações pessoais que você nos fornece voluntariamente ao se
                         cadastrar em nosso site, enviar um manuscrito ou entrar em contato conosco.
                     </p>
                     </div>
                     <div className="content">
-                    <h3 className="subsubtitle">Informações coletadas automaticamente:</h3>
                     <p>
+                        <strong>Informações coletadas automaticamente: </strong>
                         Podemos coletar determinadas informações automaticamente quando você utiliza
                         nossos serviços, incluindo seu endereço IP, tipo de navegador, páginas visitadas
                         e outras informações de análise.
