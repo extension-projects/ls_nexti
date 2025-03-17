@@ -7,6 +7,7 @@ import EstanteVirtual from './pages/EstanteVirtual';
 import CodigoDeEtica from './pages/CodigoDeEtica';
 import PoliticaDePrivacidade from './pages/PoliticaDePrivacidade';
 import PerguntasFrequentes from './pages/PerguntasFrequentes';
+import BibliotecaVirtual from './pages/BibliotecaVirtual';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/codigo-de-etica' element={<CodigoDeEtica />} />
           <Route path='/politica-de-privacidade' element={<PoliticaDePrivacidade />} />
           <Route path='/perguntas-frequentes' element={<PerguntasFrequentes />} />
+          <Route path='/biblioteca-virtual' element={<BibliotecaVirtual />} />
         </Routes>
       </Router>
         

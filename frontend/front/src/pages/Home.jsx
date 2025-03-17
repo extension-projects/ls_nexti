@@ -59,10 +59,17 @@ function Home () {
         <>
             <Header />
             <Navigation />
+            <section className="Banner">
+              <h1>Publique seu livro conosco</h1>
+              <p>Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
+              <button>Saiba Mais</button>
+
+            </section>
+
             <section className="container-livros">
                 <h3>VISITE NOSSA ESTANTE VIRTUAL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <div className="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <div className="livros">
                     <Livro capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'}/>
                     <Livro capa={ImgLivro2} nome={'Soul'}/>
                     <Livro capa={ImgLivro3} nome={'The Book of Art'}/>

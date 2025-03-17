@@ -1,0 +1,41 @@
+.container-biblioteca .bigPicture {
+    background: red;
+    width: 500px;
+    height: 500px;
+    padding: 20px 0px;
+}
+
+.container-biblioteca .book{
+    background: rgb(0, 72, 255);
+    width: 50px;
+    height: 50px;
+
+    border-color: aqua;
+    border-width: 5px;
+
+}
+
+.container-biblioteca .line{
+    display: flex;
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 20px 0px;
+}
+
+.pequeno{
+    scale: 0.5 !important;
+}
+
+
+

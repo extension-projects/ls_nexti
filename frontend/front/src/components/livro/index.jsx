@@ -1,11 +1,11 @@
 import './styles.css'
 
-export function Livro ({capa, nome}) {
+export function Livro ({ capa, nome, className }) {
     return (
-        <div className='container-livro'>
+        <div className={`container-livro ${className || ''}`}>
             <img src={capa} alt="" />
             <p>{nome}</p>
-            <button>Ver mais</button>
+            <a href="#">Ver Mais</a>
         </div>            
-    )
+    );
 }

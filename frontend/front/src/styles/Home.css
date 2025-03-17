@@ -38,19 +38,32 @@
     word-wrap: break-word; /* Evita que palavras longas saiam do card */
 }
 
-
-.header-recomendacoes {
+.container-livros{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px
 }
-
-.header-recomendacoes h3{
-    font-size: 1.8rem
-}
-
-.header-recomendacoes p{
-    width: 40%;
+.container-livros p{
     text-align: center;
+}
+
+.container-livros .livros{
+    display: flex;
+    justify-content: space-between;
+    width: 96vw;
+}
+
+.container-livros button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    width: 421px;
+    height: 54px;
+
+    border-radius: 16px;
+    border-width: 2px;
+    border-style: solid;
+
+    background: #FFB363;
+    border-color: #EB973E;
 }
