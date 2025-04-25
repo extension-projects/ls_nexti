@@ -13,6 +13,7 @@ import ImgLivro2 from '../assets/img/livro2.svg'
 import ImgLivro3 from '../assets/img/livro3.svg'
 
 import ImgPerfil from '../assets/img/perfil-test.svg'
+import mulher from '../assets/img/mulher.svg'
  
 function Home () {
 
@@ -60,15 +61,14 @@ function Home () {
             <Header />
             <Navigation />
             <section className="Banner">
-              <h1>Publique seu livro conosco</h1>
-              <p>Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
-              <button>Saiba Mais</button>
-
+              <h1 className="banner-title">Publique seu <br />livro conosco</h1>
+              <p className="banner-paragraph">Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
+              <button className="banner-button">Saiba Mais</button>
             </section>
 
             <section className="container-livros">
-                <h3>VISITE NOSSA ESTANTE VIRTUAL</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
+                <p className="visite-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div className="livros">
                     <Livro capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'}/>
                     <Livro capa={ImgLivro2} nome={'Soul'}/>
@@ -80,8 +80,8 @@ function Home () {
 
             <section className="container-recomendacoes">
                 <div className="header-recomendacoes">
-                    <h3>QUEM CONHECE RECOMENDA</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <h3 className="recomendacoes-title">QUEM CONHECE <span style={{ color: "#213E60" }}>RECOMENDA</span></h3>
+                    <p className="recomendacoes-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
 
                     <div className="cards-recomendacoes">
@@ -102,12 +102,12 @@ function Home () {
 
             <section className="container-editorial-section">
                 <div>
-                    <h3>Conheça nosso corpo editorial</h3>
+                    <h3>CONHEÇA NOSSO <br /><span style={{ color: "#213E60" }}>CORPO EDITORIAL</span></h3>
                     <p>Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
                     <button>Saiba mais</button>
                 </div>
 
-                <img src={ImgCorpoEditorial} alt="" />
+                <img className="container-editorial-section img" src={ImgCorpoEditorial} alt="" />
             </section>
             
             <Footer />
