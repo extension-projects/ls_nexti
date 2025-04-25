@@ -19,8 +19,13 @@
 
 .container-perguntas select{
     width: 40vw;
+    height: 5vw;
     color: black;
     border-color: #4C86AD;
     border-radius: 16px;
+
+    font-size: 1rem;
+
+    padding: 0px 15px;
 }
 
