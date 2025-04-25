@@ -9,6 +9,9 @@ import PoliticaDePrivacidade from './pages/PoliticaDePrivacidade';
 import PerguntasFrequentes from './pages/PerguntasFrequentes';
 import BibliotecaVirtual from './pages/BibliotecaVirtual';
 
+
+import Detalhestest from './pages/testeLink/Detalhestest'
+
 function App() {
 
   return (
@@ -24,6 +27,8 @@ function App() {
           <Route path='/politica-de-privacidade' element={<PoliticaDePrivacidade />} />
           <Route path='/perguntas-frequentes' element={<PerguntasFrequentes />} />
           <Route path='/biblioteca-virtual' element={<BibliotecaVirtual />} />
+
+          <Route path="/livro/:id" element={<Detalhestest />} />
         </Routes>
       </Router>
         

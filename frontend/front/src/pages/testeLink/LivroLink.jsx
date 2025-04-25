@@ -1,4 +1,3 @@
-import './styles.css'
 import { Link } from "react-router-dom";
 
 const livros = [
@@ -7,8 +6,7 @@ const livros = [
     { id: 3, titulo: "The Book of Art", autor: "Fulano3" },
 ];
 
-export function Livro ({ capa, nome, className, livroId}) {
-
+function LivroLink({ livroId }) {
     const livro = livros.find((liv) => liv.id === livroId);
 
     if (!livro) {
@@ -16,10 +14,9 @@ export function Livro ({ capa, nome, className, livroId}) {
     }
 
     return (
-        <div className={`container-livro ${className || ''}`}>
-            <img src={capa} alt="" />
-            <p>{nome}</p>
-            <Link to={`/livro/${livro.id}`}>Saiba Mais</Link>
-        </div>            
+        <Link to={`/livro/${livro.id}`}>Saiba Mais</Link>
     );
 }
+
+export default LivroLink;
+

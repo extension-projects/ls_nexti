@@ -1,5 +1,6 @@
 .container-editorial-section {
     display: flex;
+    background-color: blue;
 }
 
 .cards-recomendacoes {

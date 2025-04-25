@@ -12,7 +12,7 @@ export function Navigation () {
         <Link to={'/sobre-nos'}>
           <li>Institucional</li>
         </Link>
-        <Link to={'/estante-virtual'}>
+        <Link to={'/biblioteca-virtual'}>
           <li>Estante</li>
         </Link>
         <Link to={'/nossos-servicos'}>
