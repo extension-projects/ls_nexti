@@ -1,0 +1,32 @@
+.container-recomendacao{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 20px;
+
+
+}
+
+.header-recomendacao div {
+  
+}
+
+.container-recomendacao .nome {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
+
+.container-recomendacao .curso {
+    color: rgba(86, 90, 97, 1);
+    font-size: 0.9rem;
+}
+
+.container-recomendacao .header-recomendacao{
+    display: flex;
+    gap: 15px;
+}

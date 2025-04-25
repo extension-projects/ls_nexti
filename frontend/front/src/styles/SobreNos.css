@@ -1,0 +1,23 @@
+section.container-sobrenos {
+    display: flex;
+    align-items: center;
+
+    padding: 30px 50px;
+}
+
+.container-sobrenos figure img{
+    width: 584px;
+    height: 503px;
+    margin-left: 50px;
+}
+
+.container-sobrenos p {
+    width: 477px;
+    font-size: 15.3px;
+}
+
+.container-sobrenos h1{
+    font-size: 32px;
+}
+
+

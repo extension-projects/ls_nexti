@@ -1,0 +1,23 @@
+.container-politica{
+    padding: 0px 50px;
+}
+
+.container-politica .title{
+    color: #213E60;
+    font-size: 24px;
+}
+
+.container-politica .subtitle{
+    color: #2E2E2E;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container-politica strong{
+    color: #2E2E2E;
+}
+
+.container-politica .aviso{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
