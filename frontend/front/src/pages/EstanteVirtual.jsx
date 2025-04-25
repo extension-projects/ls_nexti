@@ -11,7 +11,17 @@ function EstanteVirtual () {
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />
+
             <section className="container-servicos">
+
+                <div>
+                    <img src="" alt="" />
+
+                    <div>
+                        <h1>Explorando o Universo Java: Novas Fronteiras e Tendências</h1>
+                    </div>
+                </div>
+
                 <div className="organizadores">
                     <h2 className="title">Organizadores</h2>
                     <p>Fabricio Carneiro e Samira Lustoza</p>
