@@ -5,7 +5,7 @@ import Facebook from '../../assets/img/fb.svg'
 import WhatsApp2 from '../../assets/img/wpp.svg'
 import Linkedin from '../../assets/img/linkedin.svg'
 
-import {colors} from '../../styles/colors'
+import {colors} from '../../colors'
 
 import './style.css'
 

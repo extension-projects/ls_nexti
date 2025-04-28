@@ -1,18 +1,19 @@
 section.container-sobrenos {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 
     padding: 30px 50px;
+    
+    width: 100vw;
 }
 
 .container-sobrenos figure img{
-    width: 584px;
-    height: 503px;
-    margin-left: 50px;
+    width: 40vw;
 }
 
 .container-sobrenos p {
-    width: 477px;
+    width: 40vw;
     font-size: 15.3px;
 }
 
