@@ -11,8 +11,9 @@ import './style.css'
 
 export function Footer () {
     return (
+
         <footer  style={{backgroundColor: colors.brand.primary}}>
-            <div className='content'>
+            <div className='footerContent'>
                 <div className='info'>
                     <img src={LogoFooter} alt="Logo Footer" className='Logo'/>
                     <p>Juazeiro do Norte - CE <br /> CEP: 63000-0001
