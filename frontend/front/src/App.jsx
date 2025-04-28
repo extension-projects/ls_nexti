@@ -9,6 +9,8 @@ import PoliticaDePrivacidade from './pages/PoliticaDePrivacidade';
 import PerguntasFrequentes from './pages/PerguntasFrequentes';
 import BibliotecaVirtual from './pages/BibliotecaVirtual';
 
+import '../src/index.css'
+
 
 import Detalhestest from './pages/testeLink/Detalhestest'
 
