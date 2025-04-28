@@ -10,11 +10,11 @@ import IMGFrequentes2 from '../assets/img/img-perguntas2.svg'
 
 function PerguntasFrequentes () {
     return (
-        <>
+        <div>
             <Header />
             <Navigation />
             <TitlePage title={"Perguntas Frequentes"} />
-            <section className="container-perguntas">
+            <section className="perguntasContent">
                 <div>
                     <select name="" id="">
                         <option value="asdsad">Como publicar nessa editora?</option>
@@ -41,7 +41,8 @@ function PerguntasFrequentes () {
                 
                 <img src={IMGFrequentes1} alt="" />
             </section>
-            <section className="container-perguntas">
+            
+            <section className="perguntasContent">
                 <img src={IMGFrequentes2} alt="" />
                 <div>
                     <select name="" id="">
@@ -70,7 +71,7 @@ function PerguntasFrequentes () {
                 
             </section>
             <Footer />
-        </>
+        </div>
     )
 }
 
