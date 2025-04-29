@@ -12,7 +12,7 @@ function EstanteVirtual () {
             <Navigation />
             <TitlePage title={"Estante Virtual"} />
 
-            <section className="container-servicos">
+            <section className="container-estante">
 
                 <div>
                     <img src="" alt="" />

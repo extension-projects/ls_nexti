@@ -1,31 +1,26 @@
-.container-servicos h2{
+.container-estante h2{
     color: #213E60;
     font-size: 36px;
     font-weight: bold;
     
 }
-
-.container-servicos h3{
+.container-estante h3{
     margin-top: -5px;
 }
-
-.container-servicos h3 a{
+.container-estante h3 a{
     color: #213E60;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
 }
-
-.container-servicos .autores{
+.container-estante .autores{
     color: #2E2E2E;
     margin-top: -40px;
 }
-
-.container-servicos p a{
+.container-estante p a{
     text-decoration: none;
     font-weight: 400;
 }
-
-.container-servicos .doi{
+.container-estante .doi{
     font-weight: bold;
 }
