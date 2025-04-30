@@ -3,7 +3,7 @@ import { Header } from "../components/header";
 import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
 
-import '../styles/EstanteVirtual.css'
+import '../styles/EstanteVirtual2.css'
 
 function EstanteVirtual () {
     return (

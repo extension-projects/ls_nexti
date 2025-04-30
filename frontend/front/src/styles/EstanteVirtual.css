@@ -1,26 +1,119 @@
-.container-estante h2{
-    color: #213E60;
-    font-size: 36px;
-    font-weight: bold;
-    
+.container-estante body{
+    background-color: #F4F2EF;
 }
-.container-estante h3{
-    margin-top: -5px;
+
+.container-estante {
+    display: flex;
+
+    margin-top: 2vw;
 }
-.container-estante h3 a{
-    color: #213E60;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
+.container-estante .bigPicture {
+    background: #ffffff;
+    width: 65vw;
+    padding: 2vw 2vw;
+
+    border-radius: 1vw;
+
+    margin: 0vw 2vw 2vw 2vw;
+
 }
-.container-estante .autores{
+
+.container-estante .estanteContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-estante .line {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 0px;
+
+    flex-wrap: wrap;
+}
+
+.container-estante .pequeno{
+    scale: 1 !important;
+}
+
+
+.container-estante{
+    display: flex;
+    justify-content: center;
+}
+
+.container-estante .pesquisa{
+    width: 20vw;
+    height: 20vw;
+
+    padding: 5px 2px;
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1vw;
+}
+
+.container-estante .pesquisa input{
+    width: 80%;
+    height: 3.5vw;
+
+    background: #fff;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 0.5vw;
+    border-color: #CACACA;
+
+    padding-left: 0.5vw;
+}
+
+.container-estante .pesquisa input::placeholder{
+    color: #949494;
+    font-size: 1.1vw;
+}
+
+.container-estante .pesquisa select{
+    width: 80%;
+    background: #fff;
+
+    font-size: 1.2vw;
+
+    border: none;
+    outline: none;
+    background: none; /* opcional, remove plano de fundo padrão */
+    -webkit-appearance: none; /* remove aparência padrão no Chrome/Safari */
+    -moz-appearance: none;    /* remove aparência padrão no Firefox */
+    appearance: none; 
+}
+
+.container-estante .pesquisa button{
+    width: 80%;
+    height: 3.5vw;
+
+    background: #DC6A03;
+
+    border: none;
+    border-radius: 1vw;
+
     color: #2E2E2E;
-    margin-top: -40px;
+    font-weight: 500;
+    font-size: 1.2vw;
+
+
 }
-.container-estante p a{
-    text-decoration: none;
-    font-weight: 400;
+
+.container-estante  hr {
+    background: #e4e4e4;
+    width: 80%;
+    height: 2px;
+    
+    border: none;
 }
-.container-estante .doi{
-    font-weight: bold;
-}
+
+
