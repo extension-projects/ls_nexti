@@ -10,65 +10,137 @@ header {
     max-width: 100vw;
 }
 
-figure img{
-    width: 20vw;
+.header figure img{
+    width: 15vw;
 }
 
-.inputs{
+.header .inputs{
+    gap: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 51vw;
 }
 
-.profile {
+.header .profile {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    font-size: 17px;
-
+    padding-right: 2vw;
+    font-size: 0.9vw;
     width: 20vw;
 }
 
-.input-search {
+.header .input-search {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.input-search img{
-    margin-right: -30px;
+.header .input-search img{
+    margin-right: -1.9vw;
+    width: 1vw;
     z-index: 2;
 }
 
-.input-search input{
+.header .input-search input{
     width: 25vw;
-    height: 50px;
+    height: 3vw;
     border-style: solid;
-    border-width: 1px;
-
-    border-radius: 16px;
-
+    border-width: 0.1vw;
+    font-size: 0.8vw;
+    border-radius: 0.8vw;
+    padding-top: 0.1vw;
     border-color: #CACACA;
 }
 
-select{
+.header select{
+    max-width: 25vw;
     width: 25vw;
-    height: 53px;
-
+    height: 3.2vw;
+    font-size: 0.8vw;
     border-style: solid;
-    border-width: 1px;
-
-    border-radius: 16px;
-
+    border-width: 0.1vw;
+    padding-left: 1vw;
+    border-radius: 0.8vw;
     color: #7d7d7d;
-
     border-color: #CACACA;
-    margin-right: 5px;
-
+    margin-right: 0.5vw;
 }
 
-.profile p a{
+.header .profile p a{
     color: #213E60;
+}
+
+.header .profile img{
+    width: 2.4vw;
+    padding: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: space-between;
+    }
+
+    .header figure{
+        width: 200vw ;
+        margin: 0 auto;
+     }
+
+    .header figure img{
+        width: 60%;
+        flex: 1 1 auto;
+
+
+    }
+
+    .header .inputs {
+        flex-direction: space-between;
+        gap: 10px;
+        margin: 10px auto;
+    }
+
+    .header .input-search {
+        width: 45vw;
+    }
+
+    .header .input-search input {
+        width: 100%;
+        height: 19px;
+        font-size: 5px;
+    }
+
+    .header .input-search img {
+        width: 8px;
+        margin-right: -12px;
+    }
+
+    .header select {
+        width: 100%;
+        max-width: 100%;
+        height: 20px;
+        font-size: 5px;
+        margin: 0;
+    }
+
+    .header .profile {
+        width: 100%;
+        padding: 10px;
+        font-size: 5px;
+    }
+
+    .header .profile img {
+        width: 20px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .inputs {
+        width: 100%;
+    }
+
+    .header figure img {
+        width: 50%;
+    }
 }

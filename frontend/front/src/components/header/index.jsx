@@ -9,7 +9,7 @@ import './style.css';
 
 export function Header () {
   return (
-    <header>
+    <header className='header'>
       <figure>
         <img src={Logo} alt="Logo LS" />
       </figure>
