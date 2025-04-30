@@ -70,9 +70,9 @@ function Home () {
                 <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
                 <p className="visite-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div className="livros">
-                    <Livro capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'}/>
-                    <Livro capa={ImgLivro2} nome={'Soul'}/>
-                    <Livro capa={ImgLivro3} nome={'The Book of Art'}/>
+                    <Livro capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'} livroId={1}/>
+                    <Livro capa={ImgLivro2} nome={'Soul'} livroId={2}/>
+                    <Livro capa={ImgLivro3} nome={'The Book of Art'} livroId={3}/>
                 </div>
 
                 <button>Encontre outros títulos</button>
@@ -86,7 +86,7 @@ function Home () {
 
                     <div className="cards-recomendacoes">
                         {recomendacoes.map((rec, index) => (
-                        <Recomendacao
+                        <Recomendacao 
                             key={index}
                             nome={rec.nome}
                             curso={rec.curso}
