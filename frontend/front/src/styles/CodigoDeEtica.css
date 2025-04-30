@@ -14,5 +14,10 @@
 
 .container-codigo h2{
     color: #213E60;
+    font-size: 2vw;
+}
+
+.container-codigo p {
+    font-size: 1.3vw;
 }
 

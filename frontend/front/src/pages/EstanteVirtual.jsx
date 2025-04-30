@@ -1,9 +1,14 @@
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import { Livro } from "../components/livro";
 import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
+import '../styles/BibliotecaVirtual.css'
 
-import '../styles/EstanteVirtual.css'
+import ImgLivro1 from '../assets/img/livro1.svg'
+import ImgLivro2 from '../assets/img/livro2.svg'
+import ImgLivro3 from '../assets/img/livro3.svg'
+
 
 function EstanteVirtual () {
     return (
@@ -12,53 +17,28 @@ function EstanteVirtual () {
             <Navigation />
             <TitlePage title={"Estante Virtual"} />
 
-            <section className="container-servicos">
+            <div className="content">
+                <section className="container-biblioteca">
+                    <div className="pesquisa">
+                        <input type="text" />
 
-                <div>
-                    <img src="" alt="" />
-
-                    <div>
-                        <h1>Explorando o Universo Java: Novas Fronteiras e Tendências</h1>
                     </div>
-                </div>
 
-                <div className="organizadores">
-                    <h2 className="title">Organizadores</h2>
-                    <p>Fabricio Carneiro e Samira Lustoza</p>
-                </div>
+                    <div className="bigPicture">
+                        <div className="line">
 
-                <div className="conteudo">
-                    <h2 className="title">Conteúdo</h2>
+                            <Livro className="pequeno" capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'} livroId={1}/>
 
-                    {[...Array(5)].map((_, index) => (
-                    <div key={index} className="capitulo">
-                        <h3 className="capitulo-titulo">
-                        <a href="#" className="capitulo-link">
-                            Capítulo 1: Introdução à Programação Orientada a Objetos com Java
-                        </a>
-                        </h3>
-                        <p className="autores">
-                        Lucas Oliveira, Rafaela Santos, Pedro Almeida, Ana Silva
-                        </p>
-                        <p className="doi">
-                        DOI: <a href="#">10.36229/978-65-5866-371-3-CAP01</a>
-                        </p>
+                            <Livro className="pequeno" capa={ImgLivro2} nome={'Soul'} livroId={2}/>
 
-                        <h3 className="capitulo-titulo">
-                        <a href="#" className="capitulo-link">
-                            Capítulo 2: Desenvolvimento de Aplicações Web com Spring Boot e Hibernate
-                        </a>
-                        </h3>
-                        <p className="autores">
-                        Bruno Pereira, Carolina Lima, Daniel Oliveira, Mariana Rodrigues
-                        </p>
-                        <p className="doi">
-                        DOI: <a href="#">10.36229/978-65-5866-371-3-CAP02</a>
-                        </p>
+                            <Livro className="pequeno" capa={ImgLivro3} nome={'The Book of Art'} livroId={3}/>
+                             
+                        </div>
+
                     </div>
-                    ))}
-                </div>
-            </section>
+
+                </section>
+            </div>
 
             <Footer />
         </>
