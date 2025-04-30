@@ -1,0 +1,35 @@
+.container-livro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: rgba(158, 158, 158, 0.518);
+    border-radius: 1vw;
+
+
+    padding: 2%;
+
+    width: 18vw;
+    height: auto;
+
+    margin-bottom: 2vw;
+}
+
+.container-livro img{
+    width: 80%;
+}
+
+.container-livro p{
+    text-align: center;
+    font-size: 1.3vw;
+
+}
+
+.container-livro .ancoragem {
+    color: #DC6A03;
+    text-align: center;
+    font-size: 1.3vw;
+}

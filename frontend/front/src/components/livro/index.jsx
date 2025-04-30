@@ -19,7 +19,7 @@ export function Livro ({ capa, nome, className, livroId}) {
         <div className={`container-livro ${className || ''}`}>
             <img src={capa} alt="" />
             <p>{nome}</p>
-            <Link to={`/livro/${livro.id}`}>Saiba Mais</Link>
+            <Link to={`/livro/${livro.id}`} className='ancoragem'>Saiba Mais</Link>
         </div>            
     );
 }
