@@ -11,6 +11,7 @@ nav ul {
 nav a{
     color: white;
     text-decoration: none;
+    font-size: 1.5vw;
 }
 
 nav a:hover{
@@ -20,9 +21,11 @@ nav a:hover{
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    
 
     background: #213E60;
 
-    height: 64px;
+    height: 5.8vw;
+
 }
