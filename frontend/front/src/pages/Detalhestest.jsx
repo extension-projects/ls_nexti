@@ -10,6 +10,8 @@ import { livros } from "../data/ListaLivros";
 
 import "../styles/DetalhesLivro.css"
 
+import ScrollToTop from "../components/ScrollTop/ScrollTop";
+
 
 /*{ id: , titulo: , organizadores: [], DOI: , descricao: , capa: }*/
 
@@ -23,6 +25,7 @@ function Detalhestest() {
 
     return (
         <div className="container-DetalhesLivro">
+            <ScrollToTop />
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />

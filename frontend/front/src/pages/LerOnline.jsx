@@ -8,6 +8,8 @@ import { TitlePage } from "../../src/components/title-page/index";
 
 import { livros } from "../data/ListaLivros";
 
+import ScrollToTop from "../components/ScrollTop/ScrollTop";
+
 import "../styles/LerOnline.css"
 
 
@@ -24,13 +26,14 @@ function LerOnline() {
 
     return (
         <div className="container-LerOnline">
+            <ScrollToTop />
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />
 
             <div className="lerOnlineContent">
 
-                <iframe src={livro.pdf} allowFullScreen>
+                <iframe src={`${livro.pdf}#zoom=25`} allowFullScreen>
                     <embed src={livro.pdf} type="application/pdf" />
                 </iframe>
                 
