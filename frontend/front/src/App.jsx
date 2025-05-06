@@ -3,18 +3,16 @@ import Home from "./pages/Home"
 import SobreNos from './pages/SobreNos';
 import CorpoEditorial from './pages/CorpoEditorial';
 import NossosServicos from './pages/NossosServicos';
-
-/*import EstanteVirtual from './pages/EstanteVirtual2';*/
-
 import CodigoDeEtica from './pages/CodigoDeEtica';
 import PoliticaDePrivacidade from './pages/PoliticaDePrivacidade';
 import PerguntasFrequentes from './pages/PerguntasFrequentes';
 import EstanteVirtual from './pages/EstanteVirtual';
+import LerOnline from "./pages/LerOnline";
 
 import '../src/index.css'
 
 
-import Detalhestest from './pages/testeLink/Detalhestest'
+import DetalhesLivro from './pages/Detalhestest'
 
 function App() {
 
@@ -26,14 +24,14 @@ function App() {
           <Route path="/sobre-nos" element={<SobreNos />} />
           <Route path='/corpo-editorial' element={<CorpoEditorial />} />
           <Route path='/nossos-servicos' element={<NossosServicos />} />
-
-          <Route path='/estante-virtual' element={<EstanteVirtual />} />
-
           <Route path='/codigo-de-etica' element={<CodigoDeEtica />} />
           <Route path='/politica-de-privacidade' element={<PoliticaDePrivacidade />} />
           <Route path='/perguntas-frequentes' element={<PerguntasFrequentes />} />
-          <Route path='/biblioteca-virtual' element={<EstanteVirtual />} />
-          <Route path="/livro/:id" element={<Detalhestest />} />
+
+          <Route path='/estante-virtual' element={<EstanteVirtual />} />
+          <Route path="/livro/:id" element={<DetalhesLivro/>} />
+          
+          <Route path="/ler-online/:id" element={<LerOnline/>} />
         </Routes>
       </Router>
         

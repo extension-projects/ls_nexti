@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 
-const livros = [
-    { id: 1, titulo: "The Light Beyond The Garden Wall", autor: "Fulano1" },
-    { id: 2, titulo: "Soul", autor: "Fulano2" },
-    { id: 3, titulo: "The Book of Art", autor: "Fulano3" },
-];
+import { livros } from "../data/ListaLivros";
 
 function LivroLink({ livroId }) {
     const livro = livros.find((liv) => liv.id === livroId);

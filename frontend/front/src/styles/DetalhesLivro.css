@@ -1,0 +1,51 @@
+.container-DetalhesLivro {
+    background: #ffffff;
+}
+
+.container-DetalhesLivro .detalhesLivroContent {
+    padding: 0px 4vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral{
+    display: flex;
+    justify-content: start;
+}
+
+.container-DetalhesLivro .detalhesLivroContent h2, h3 {
+   color: #213E60;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral .dados{
+    padding: 0 5vw;
+    width: 50vw;
+    margin-left: 2vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral figure{
+    margin: 0px;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .visaoGeral figure img{
+    height: 100%;
+    max-height: 30vw;
+}
+
+.container-DetalhesLivro .detalhesLivroContent .conteudoLivro{
+    background-color: #ffffff;
+}
+
+.container-DetalhesLivro .detalhesLivroContent button{
+    background: #FFB363;
+
+    color: #2E2E2E;
+
+    font-weight: 600;
+
+    width: 20vw;
+    height: 3vw;
+
+    border-color: #EB973E;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 12px;
+}

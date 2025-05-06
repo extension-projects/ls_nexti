@@ -1,11 +1,7 @@
 import './styles.css'
 import { Link } from "react-router-dom";
 
-const livros = [
-    { id: 1, titulo: "The Light Beyond The Garden Wall", autor: "Fulano1" },
-    { id: 2, titulo: "Soul", autor: "Fulano2" },
-    { id: 3, titulo: "The Book of Art", autor: "Fulano3" },
-];
+import { livros } from "../../data/ListaLivros";
 
 export function Livro ({ capa, nome, className, livroId}) {
 
@@ -23,3 +19,4 @@ export function Livro ({ capa, nome, className, livroId}) {
         </div>            
     );
 }
+
