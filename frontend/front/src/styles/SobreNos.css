@@ -3,6 +3,7 @@
     width: 100%;
 }
 
+
 section.sobreNosContent {
     display: flex;
     align-items: center;
@@ -12,7 +13,6 @@ section.sobreNosContent {
     padding: 30px 5%;
     max-width: 1200px;
 
-    margin: 0 auto;
     box-sizing: border-box;
 }
 
