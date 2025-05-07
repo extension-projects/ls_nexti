@@ -27,6 +27,10 @@ function LerOnline() {
     return (
         <div className="container-LerOnline">
             <ScrollToTop />
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />

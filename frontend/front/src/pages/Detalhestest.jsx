@@ -26,6 +26,10 @@ function Detalhestest() {
     return (
         <div className="container-DetalhesLivro">
             <ScrollToTop />
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />

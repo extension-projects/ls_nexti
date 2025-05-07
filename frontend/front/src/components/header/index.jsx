@@ -41,3 +41,5 @@ export function Header () {
     </header>
   );
 }
+
+/*Criei um select e estilizaei ele com bordas arredondadas, mas quando o cursor passa por cima da seta de seleção, ele*/

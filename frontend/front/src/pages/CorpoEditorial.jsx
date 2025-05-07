@@ -8,8 +8,13 @@ import '../styles/CorpoEditorial.css'
 function CorpoEditorial () {
     return (
         <>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
+            
             <TitlePage title={"Corpo Editorial"} />
             <section className="container-editorial">
                     <div className="top">

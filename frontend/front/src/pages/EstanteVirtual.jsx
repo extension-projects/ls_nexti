@@ -13,6 +13,10 @@ import ImgLivro3 from '../assets/img/livro3.svg'
 function EstanteVirtual () {
     return (
         <>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Estante Virtual"} />

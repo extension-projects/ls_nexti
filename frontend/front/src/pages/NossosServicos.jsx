@@ -8,6 +8,10 @@ import '../styles/NossosServicos.css'
 function NossosServicos () {
     return (
         <>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Conheça nossos serviços"} />

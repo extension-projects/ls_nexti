@@ -10,6 +10,10 @@ import SobreNósIMG from '../assets/img/sobre-nos.svg'
 function SobreNos () {
     return (
         <div className="container-sobrenos">
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Sobre nós"} />

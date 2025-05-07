@@ -9,6 +9,10 @@ import '../styles/CodigoDeEtica.css'
 function CodigoDeEtica () {
     return (
         <>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Código de Ética"} />

@@ -9,6 +9,10 @@ import '../styles/PoliticaDePrivacidade.css'
 function PoliticaDePrivacidade () {
     return (
         <>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Política de Privacidade"} />
