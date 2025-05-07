@@ -5,12 +5,15 @@ import { Navigation } from "../components/navigation";
 import { Recomendacao } from "../components/recomendacao";
 
 import '../styles/Home.css'
+import { Link } from "react-router-dom";
 
 import ImgCorpoEditorial from '../assets/img/img-editorial.svg'
 
 import ImgLivro1 from '../assets/img/livro1.svg'
 import ImgLivro2 from '../assets/img/livro2.svg'
 import ImgLivro3 from '../assets/img/livro3.svg'
+
+
 
 import ImgPerfil from '../assets/img/perfil-test.svg'
 import mulher from '../assets/img/mulher.svg'
@@ -55,7 +58,7 @@ function Home () {
           foto: ImgPerfil
         }
       ];
-
+      
     return (
         <>
             <Header />
@@ -63,7 +66,7 @@ function Home () {
             <section className="Banner">
               <h1 className="banner-title">Publique seu <br />livro conosco</h1>
               <p className="banner-paragraph">Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
-              <button className="banner-button">Saiba Mais</button>
+              <Link to={"/nossos-servicos"}><button className="banner-button">Saiba Mais</button></Link>
             </section>
 
             <section className="container-livros">
@@ -86,15 +89,16 @@ function Home () {
 
                     <div className="cards-recomendacoes">
                         {recomendacoes.map((rec, index) => (
-                        <Recomendacao 
+                        <Recomendacao
                             key={index}
                             nome={rec.nome}
                             curso={rec.curso}
                             texto={rec.texto}
                             foto={rec.foto}
                         />
+                        
                         ))}
-                    </div>
+                    </div>  
 
 
 
@@ -104,7 +108,7 @@ function Home () {
                 <div>
                     <h3>CONHEÇA NOSSO <br /><span style={{ color: "#213E60" }}>CORPO EDITORIAL</span></h3>
                     <p>Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
-                    <button>Saiba mais</button>
+                    <Link to={"/corpo-editorial"}><button>Saiba mais</button></Link>
                 </div>
 
                 <img className="container-editorial-section img" src={ImgCorpoEditorial} alt="" />
