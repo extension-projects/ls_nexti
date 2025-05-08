@@ -1,32 +1,41 @@
 .container-recomendacao{
     display: flex;
     flex-direction: column;
-    width: 450px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 16px;
-    padding: 20px;
-
-
+    width: 15vw;
+    height: 13vw;
+    border-radius: 1.16vw;
+    padding: 2vw;
 }
 
-.header-recomendacao div {
-  
-}
 
 .container-recomendacao .nome {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.40vw;
+    margin: 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
 }
-
-
 
 .container-recomendacao .curso {
     color: rgba(86, 90, 97, 1);
-    font-size: 0.9rem;
+    font-size: 1vw;
+    margin: 0;
+    padding-bottom: 1vw;
 }
 
 .container-recomendacao .header-recomendacao{
     display: flex;
-    gap: 15px;
+    gap: 1vw;
+}
+
+
+.header-recomendacao .foto{
+    width: 5vw;
+}
+.container-recomendacao .texto{
+    padding-top: 0.90vw;
+    color: #2A2A2A  ;
+    font-size: 1.1vw;
+    font-weight: 500;
+
 }
