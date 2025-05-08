@@ -78,16 +78,16 @@ function Home () {
                     <Livro capa={ImgLivro3} nome={'The Book of Art'} livroId={3}/>
                 </div>
 
-                <button>Encontre outros títulos</button>
+                <Link to={"/estante-virtual"}><button>Encontre outros títulos</button></Link>
             </section>
 
             <section className="container-recomendacoes">
                 <div className="header-recomendacoes">
                     <h3 className="recomendacoes-title">QUEM CONHECE <span style={{ color: "#213E60" }}>RECOMENDA</span></h3>
-                    <p className="recomendacoes-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p className="recomendacoes-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
 
-                    <div className="cards-recomendacoes">
+                <div className="cards-recomendacoes"> 
                         {recomendacoes.map((rec, index) => (
                         <Recomendacao
                             key={index}
