@@ -4,10 +4,21 @@ import { Link } from 'react-router-dom';
 import Icon from '../../assets/img/icon-profile.svg';
 import Search from '../../assets/img/search.svg';
 
+import Swal from 'sweetalert2';
+
 import './style.css';
 
 
 export function Header () {
+
+  const mostrarAlerta = () => {
+      Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+    });
+  };
+
   return (
     <header className='header'>
       <figure>
@@ -35,11 +46,11 @@ export function Header () {
         <div className="profile">
             <img src={Icon} alt="" />
             <p>Bem-vindo visitante, <br />  
-                  <Link>Faça o Login</Link> ou <Link>Cadastre-se!</Link>
+                  <Link onClick={mostrarAlerta}>Faça o Login</Link> ou <Link onClick={mostrarAlerta}>Cadastre-se!</Link>
             </p>
         </div>
     </header>
   );
 }
 
-/*Criei um select e estilizaei ele com bordas arredondadas, mas quando o cursor passa por cima da seta de seleção, ele*/
+
