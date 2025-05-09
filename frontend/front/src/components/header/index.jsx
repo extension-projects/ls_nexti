@@ -40,9 +40,12 @@ export function Header () {
       <div className='inputs'>
         <select name="" id="" defaultValue="">
             <option value="" disabled hidden>Buscar por todas as áreas</option>
-            <option value="area1">Área 1</option>
-            <option value="area2">Área 2</option>
-            <option value="area3">Área 3</option>
+            <option value="romance">Romance</option>
+            <option value="fantasia">Fantasia</option>
+            <option value="ficcao-cientifica">Ficção científica</option>
+            <option value="misterio-suspense">Mistério / Suspense</option>
+            <option value="terror-horror">Terror / Horror</option>
+            <option value="contos">Contos</option>
         </select>
 
         <div className="input-search">
