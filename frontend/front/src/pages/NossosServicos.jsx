@@ -5,9 +5,13 @@ import { TitlePage } from "../components/title-page";
 
 import '../styles/NossosServicos.css'
 
+import ScrollToTop from "../features/ScrollTop";
+
 function NossosServicos () {
     return (
         <>
+            <ScrollToTop/>
+
             <div className="topo">
                 <Header />
                 <Navigation />

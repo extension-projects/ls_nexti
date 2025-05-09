@@ -6,9 +6,12 @@ import { Aviso } from "../components/aviso";
 
 import '../styles/PoliticaDePrivacidade.css'
 
+import ScrollToTop from "../features/ScrollTop";
+
 function PoliticaDePrivacidade () {
     return (
         <>
+            <ScrollToTop/>
             <div className="topo">
                 <Header />
                 <Navigation />

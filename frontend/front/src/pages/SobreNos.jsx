@@ -7,9 +7,12 @@ import '../styles/SobreNos.css'
 
 import SobreNósIMG from '../assets/img/sobre-nos.svg'
 
+import ScrollToTop from "../features/ScrollTop";
+
 function SobreNos () {
     return (
         <div className="container-sobrenos">
+            <ScrollToTop/>
             <div className="topo">
                 <Header />
                 <Navigation />

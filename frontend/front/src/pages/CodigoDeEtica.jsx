@@ -4,11 +4,14 @@ import { Header } from "../components/header";
 import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
 
+import ScrollToTop from "../features/ScrollTop";
+
 import '../styles/CodigoDeEtica.css'
 
 function CodigoDeEtica () {
     return (
         <>
+            <ScrollToTop/>
             <div className="topo">
                 <Header />
                 <Navigation />
@@ -22,6 +25,7 @@ function CodigoDeEtica () {
                     <Aviso text='A Editora Learn Skills e seus autores estão comprometidos com os princípios
                     éticos fundamentais, visando promover a excelência, integridade e responsabilidade em todas as atividades editoriais.' />
                 </div>
+
                 <h2>Editora</h2>
                 <p> Comprometemo-nos a conduzir todas as operações com integridade e transparência, mantendo altos padrões éticos em todas as interações. Buscamos manter os mais altos padrões de qualidade em todas as publicações, assegurando a precisão, originalidade e relevância de cada obra</p>
                 <p>Assumimos a responsabilidade social e ambiental, buscando minimizar nosso impacto no meio ambiente e contribuir positivamente para as comunidades em que operamos. Respeitamos a confidencialidade das informações dos autores, assegurando a segurança de seus dados e tratando todos com respeito e dignidade. Evitamos conflitos de interesses e agimos de forma imparcial em todas as nossas decisões e atividades.</p>

@@ -8,9 +8,16 @@ import '../styles/PerguntasFrequentes.css'
 import IMGFrequentes1 from '../assets/img/img-perguntas.svg'
 import IMGFrequentes2 from '../assets/img/img-perguntas2.svg'
 
+import ScrollToTop from "../features/ScrollTop";
+
 function PerguntasFrequentes () {
     return (
         <div>
+            <ScrollToTop/>
+            <div className="topo">
+                <Header />
+                <Navigation />
+            </div>
             <Header />
             <Navigation />
             <TitlePage title={"Perguntas Frequentes"} />

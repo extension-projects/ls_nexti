@@ -8,7 +8,7 @@ import { TitlePage } from "../../src/components/title-page/index";
 
 import { livros } from "../data/ListaLivros";
 
-import ScrollToTop from "../components/ScrollTop/ScrollTop";
+import ScrollToTop from "../features/ScrollTop";
 
 import "../styles/LerOnline.css"
 

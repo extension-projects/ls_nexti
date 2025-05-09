@@ -5,6 +5,8 @@ import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
 import '../styles/EstanteVirtual.css'
 
+import ScrollToTop from "../features/ScrollTop";
+
 import ImgLivro1 from '../assets/img/livro1.svg'
 import ImgLivro2 from '../assets/img/livro2.svg'
 import ImgLivro3 from '../assets/img/livro3.svg'
@@ -13,6 +15,7 @@ import ImgLivro3 from '../assets/img/livro3.svg'
 function EstanteVirtual () {
     return (
         <>
+            <ScrollToTop/>
             <div className="topo">
                 <Header />
                 <Navigation />

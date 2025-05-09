@@ -3,11 +3,14 @@ import { Header } from "../components/header";
 import { Navigation } from "../components/navigation";
 import { TitlePage } from "../components/title-page";
 
+import ScrollToTop from "../features/ScrollTop";
+
 import '../styles/CorpoEditorial.css'
 
 function CorpoEditorial () {
     return (
         <>
+            <ScrollToTop/>
             <div className="topo">
                 <Header />
                 <Navigation />

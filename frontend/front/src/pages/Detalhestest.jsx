@@ -10,7 +10,7 @@ import { livros } from "../data/ListaLivros";
 
 import "../styles/DetalhesLivro.css"
 
-import ScrollToTop from "../components/ScrollTop/ScrollTop";
+import ScrollToTop from "../features/ScrollTop";
 
 
 /*{ id: , titulo: , organizadores: [], DOI: , descricao: , capa: }*/
