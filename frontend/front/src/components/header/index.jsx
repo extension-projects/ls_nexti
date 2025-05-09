@@ -19,6 +19,18 @@ export function Header () {
     });
   };
 
+  const handleKeyDown = (event) => {
+  if (event.key === 'Enter') {
+    setTimeout(() => {
+      Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+      });
+    }, 10); 
+  }
+};
+
   return (
     <header className='header'>
       <figure>
@@ -34,7 +46,7 @@ export function Header () {
         </select>
 
         <div className="input-search">
-            <input type="text" placeholder='Pesquise por...'/>
+            <input type="text" placeholder='Pesquise por...' onKeyDown={handleKeyDown}/>
             <img src={Search} alt="" />
         </div>
 

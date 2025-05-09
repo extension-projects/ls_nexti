@@ -50,9 +50,6 @@ header {
     z-index: 2;
 }
 
-.header .input-search input:focus + img {
-  opacity: 0;
-}
 
 
 .header .input-search input{
