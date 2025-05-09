@@ -31,10 +31,17 @@ header {
     width: 20vw;
 }
 
+.header .input-search img {
+  position: absolute;
+  left: 1vw;
+  width: 1vw;
+  transition: opacity 0.2s ease;
+}
+
 .header .input-search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .header .input-search img{
@@ -42,6 +49,11 @@ header {
     width: 1vw;
     z-index: 2;
 }
+
+.header .input-search input:focus + img {
+  opacity: 0;
+}
+
 
 .header .input-search input{
     width: 25vw;
@@ -52,6 +64,13 @@ header {
     border-radius: 0.8vw;
     padding-top: 0.1vw;
     border-color: #CACACA;
+
+    padding-left: 10%;
+}
+
+.header .input-search input:focus{
+    border: 0.01vw solid #4C86AD;; 
+    outline: none;          
 }
 
 .header select{
@@ -66,6 +85,11 @@ header {
     color: #7d7d7d;
     border-color: #CACACA;
     margin-right: 0.5vw;
+}
+
+.header select:focus{
+    border: 0.01vw solid #4C86AD;; 
+    outline: none;          
 }
 
 .header .profile p a{
@@ -126,7 +150,7 @@ header {
     .header .profile {
         width: 100%;
         padding: 10px;
-        font-size: 5px;
+        font-size: 1.2vw;
     }
 
     .header .profile img {

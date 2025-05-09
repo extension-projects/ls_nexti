@@ -26,17 +26,16 @@ export function Header () {
       </figure>
 
       <div className='inputs'>
-        <select name="" id="">
-            <option value="">Buscar por todas as áreas</option>
+        <select name="" id="" defaultValue="">
+            <option value="" disabled hidden>Buscar por todas as áreas</option>
             <option value="area1">Área 1</option>
             <option value="area2">Área 2</option>
             <option value="area3">Área 3</option>
         </select>
 
         <div className="input-search">
-            
+            <input type="text" placeholder='Pesquise por...'/>
             <img src={Search} alt="" />
-            <input type="text" placeholder='          Pesquise por...'/>
         </div>
 
       </div>
@@ -52,5 +51,3 @@ export function Header () {
     </header>
   );
 }
-
-
