@@ -8,9 +8,21 @@ import Linkedin from '../../assets/img/linkedin.svg'
 import {colors} from '../../colors'
 import { Link } from 'react-router-dom'
 
+import Swal from 'sweetalert2';
+
+
 import './style.css'
 
 export function Footer () {
+
+      const mostrarAlerta = () => {
+          Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+        });
+      };
+
     return (
 
         <footer  style={{backgroundColor: colors.brand.primary}}>
@@ -39,13 +51,13 @@ export function Footer () {
                     <div>
                         <h4>Ajuda</h4>
                         <ul>
-                        <Link to={'/corpo-editorial'}>
+                        <Link onClick={mostrarAlerta}>
                         <li>Fale conosco</li>
                         </Link>
-                        <Link to={'/codigo-de-etica'}>
+                        <Link onClick={mostrarAlerta}>
                         <li>Status da plataforma</li>
                         </Link>
-                        <Link to={'/politica-de-privacidade'}>
+                        <Link onClick={mostrarAlerta}>
                         <li>Reportar erro</li>
                         </Link>
                         </ul>
@@ -54,13 +66,13 @@ export function Footer () {
                     <div>
                         <h4>Links úteis</h4>
                         <ul>
-                        <Link to={'/corpo-editorial'}>
+                        <Link onClick={mostrarAlerta}>
                         <li>Termos de uso</li>
                         </Link>
-                        <Link to={'/codigo-de-etica'}>
-                        <li>Estante</li>
+                        <Link to={'/estante-virtual'}>
+                        <li>Estante virtual</li>
                         </Link>
-                        <Link to={'/politica-de-privacidade'}>
+                        <Link onClick={mostrarAlerta}>
                         <li>Termos de consentimento</li>
                         </Link>
                         </ul>
