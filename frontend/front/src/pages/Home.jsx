@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 
 import ImgCorpoEditorial from '../assets/img/img-editorial.svg'
 
-import ImgLivro1 from '../assets/img/livro1.svg'
-import ImgLivro2 from '../assets/img/livro2.svg'
-import ImgLivro3 from '../assets/img/livro3.svg'
+import ImgLivro1 from "../assets/img/capasLivros/algoritmos_dados.jpg"
+import ImgLivro2 from "../assets/img/capasLivros/logicaProgramacao.png"
+import ImgLivro3 from "../assets/img/capasLivros/Paradigmas_programacao.png"
 
 import ScrollToTop from "../features/ScrollTop";
 
@@ -81,9 +81,9 @@ function Home () {
                 <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
                 <p className="visite-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <div className="livros">
-                    <Livro capa={ImgLivro1} nome={'The Light Beyond The Garden Wall'} livroId={1}/>
-                    <Livro capa={ImgLivro2} nome={'Soul'} livroId={2}/>
-                    <Livro capa={ImgLivro3} nome={'The Book of Art'} livroId={3}/>
+                    <Livro capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
+                    <Livro capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
+                    <Livro capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
                 </div>
 
                 <Link to={"/estante-virtual"}><button>Encontre outros títulos</button></Link>
