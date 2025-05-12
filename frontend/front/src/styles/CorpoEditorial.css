@@ -1,4 +1,4 @@
-section.container-editorial {
+section .container-editorial {
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -63,4 +63,9 @@ section.container-editorial {
 
 .container-editorial .editorial-list strong {
   font-size: 1.6vw;
+}
+
+.editorial-container {
+  padding-bottom: 2vw;
+
 }
