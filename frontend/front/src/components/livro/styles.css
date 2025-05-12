@@ -26,6 +26,7 @@
 
 .container-livro img{
     width: 80%;
+    border-radius: 3%;
 }
 
 .container-livro p{

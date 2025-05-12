@@ -37,7 +37,7 @@ function LerOnline() {
 
             <div className="lerOnlineContent">
 
-                <iframe src={`${livro.pdf}#zoom=25`} allowFullScreen>
+                <iframe src={`${livro.pdf}#zoom=50`} allowFullScreen>
                     <embed src={livro.pdf} type="application/pdf" />
                 </iframe>
                 
