@@ -25,6 +25,11 @@
     
 }
 
+
+.container-livros .visite-paragraph {
+    max-width: 50vw;
+}
+
 .container-editorial-section button {
     background-color: #EB973E;
     color: #2E2E2E;

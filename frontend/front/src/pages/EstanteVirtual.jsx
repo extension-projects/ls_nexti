@@ -34,26 +34,6 @@ function EstanteVirtual () {
                 <section className="container-estante">
 
                     <div className="pesquisa">
-                        <input type="text" placeholder="Pesquisar"/>
-                        <br />
-                        <hr />
-
-                        <select name="" id="">
-                            <option value="">Categorias</option>
-                        
-
-                        </select>
-                        <br />
-                        <hr />
-
-                        <select name="" id="">
-                            <option value="">Lançamento</option>
-
-                        </select>
-                        <br />
-
-                        <button>Pesquisar</button>
-                        <br />
 
                     </div>
 

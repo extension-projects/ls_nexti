@@ -17,7 +17,14 @@ import ScrollToTop from "../features/ScrollTop";
 
 
 
-import ImgPerfil from '../assets/img/perfil-test.svg'
+import ImgPerfil1 from '../assets/img/perfil-test.svg'
+import ImgPerfil2 from '../assets/img/perfil-test.svg'
+import ImgPerfil3 from '../assets/img/perfil-test.svg'
+import ImgPerfil4 from '../assets/img/perfil-test.svg'
+import ImgPerfil5 from '../assets/img/perfil-test.svg'
+import ImgPerfil6 from '../assets/img/perfil-test.svg'
+
+
 import mulher from '../assets/img/mulher.svg'
  
 function Home () {
@@ -26,38 +33,38 @@ function Home () {
         {
           nome: "Haruka",
           curso: "Analista de Sistemas",
-          texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-          foto: ImgPerfil
+          texto: "É ótimo ver uma abordagem tão humana e acessível à educação digital. Recomendo para meus alunos!",
+          foto: ImgPerfil1
         },
         {
           nome: "Takashi",
           curso: "Engenharia de Software",
           texto: "Sempre admirei a dedicação da equipe. O aprendizado foi enriquecedor e a experiência prática fez toda a diferença.",
-          foto: ImgPerfil
+          foto: ImgPerfil2
         },
         {
           nome: "Yuki",
           curso: "Ciência da Computação",
           texto: "O curso me ajudou a desenvolver habilidades essenciais para o mercado de trabalho. Recomendo para todos que querem crescer na área!",
-          foto: ImgPerfil
+          foto: ImgPerfil3
         },
         {
           nome: "Souta",
           curso: "Desenvolvimento Web",
           texto: "A didática utilizada foi incrível! Aprendi muito sobre frameworks modernos e como aplicá-los em projetos reais.",
-          foto: ImgPerfil
+          foto: ImgPerfil4
         },
         {
           nome: "Aoi",
           curso: "Banco de Dados",
           texto: "Um curso bem estruturado, com material de qualidade e professores que realmente entendem do assunto.",
-          foto: ImgPerfil
+          foto: ImgPerfil5
         },
         {
           nome: "Ren",
           curso: "Segurança da Informação",
           texto: "Aprendi muito sobre cibersegurança e melhores práticas para proteger sistemas contra ataques.",
-          foto: ImgPerfil
+          foto: ImgPerfil6
         }
       ];
       
@@ -79,7 +86,7 @@ function Home () {
 
             <section className="container-livros">
                 <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
-                <p className="visite-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
                 <div className="livros">
                     <Livro capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
                     <Livro capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
@@ -92,7 +99,7 @@ function Home () {
             <section className="container-recomendacoes">
                 <div className="header-recomendacoes">
                     <h3 className="recomendacoes-title">QUEM CONHECE <span style={{ color: "#213E60" }}>RECOMENDA</span></h3>
-                    <p className="recomendacoes-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <p className="recomendacoes-paragraph">Quem passa pela Learn Skills vive uma jornada de aprendizado transformadora. Nossos alunos <br /> e parceiros reconhecem o cuidado, a dedicação e a qualidade de tudo o que oferecemos.</p>
                 </div>
 
                 <div className="cards-recomendacoes"> 

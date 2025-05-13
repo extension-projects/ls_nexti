@@ -6,6 +6,13 @@ import { Header } from "../../src/components/header/index";
 import { Navigation } from "../../src/components/navigation/index";
 import { TitlePage } from "../../src/components/title-page/index";
 
+
+import ImgLivro1 from "../assets/img/capasLivros/algoritmos_dados.jpg"
+import ImgLivro2 from "../assets/img/capasLivros/logicaProgramacao.png"
+import ImgLivro3 from "../assets/img/capasLivros/Paradigmas_programacao.png"
+
+import { Livro } from "../components/livro";
+
 import { livros } from "../data/ListaLivros";
 
 import "../styles/DetalhesLivro.css"
@@ -42,9 +49,11 @@ function Detalhestest() {
 
                     <div className="dados">
                         <h1>{livro.titulo}</h1>
+                        <p>Autor: {livro.autor}</p>
                         <p>DOI: {livro.doi}</p>
                         <h2>Descrição</h2>
                         <p>{livro.descricao}</p>
+
 
                         
                         <Link to={`/ler-online/${livro.id}`} >
@@ -56,21 +65,19 @@ function Detalhestest() {
 
                 </div>
 
-                <div className="conteudoLivro">
-                    <hr />
+                <hr />
 
-                    <h2>Organizadores</h2>
-                    <p>{livro.autor}</p>
-
-                    <h2>Conteudo</h2>
-
-                    <h3>Capitulo 1:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sit, modi corporis nemo quisquam fuga perferendis officiis aliquam aspernatur suscipit debitis. Ad voluptas aliquam odio alias optio quibusdam qui minima?</p>
-
-                    <h3>Capitulo 2:</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, fugiat! Eaque vel nulla, dignissimos placeat dolorem in esse numquam enim at. Quas, autem! Officiis veniam autem inventore laborum corrupti odio!</p>
-                    
-                </div>
+                <section className="container-livros">
+                    <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
+                    <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
+                    <div className="livros">
+                        <Livro capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
+                        <Livro capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
+                        <Livro capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
+                    </div>
+    
+                    <Link to={"/estante-virtual"}><button>Encontre outros títulos</button></Link>
+                </section>
 
             </div>
              
