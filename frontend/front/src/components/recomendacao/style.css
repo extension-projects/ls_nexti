@@ -31,6 +31,11 @@
 
 .header-recomendacao .foto{
     width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    border-color: #EB973E;
+    border-width: 2%;
+    border-style: solid;
 }
 .container-recomendacao .texto{
     padding-top: 0.90vw;

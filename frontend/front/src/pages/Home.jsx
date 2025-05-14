@@ -17,12 +17,12 @@ import ScrollToTop from "../features/ScrollTop";
 
 
 
-import ImgPerfil1 from '../assets/img/perfil-test.svg'
-import ImgPerfil2 from '../assets/img/perfil-test.svg'
-import ImgPerfil3 from '../assets/img/perfil-test.svg'
-import ImgPerfil4 from '../assets/img/perfil-test.svg'
-import ImgPerfil5 from '../assets/img/perfil-test.svg'
-import ImgPerfil6 from '../assets/img/perfil-test.svg'
+import ImgPerfil1 from '../assets/img/fotosPerfil/fotoPerfil1.jpeg'
+import ImgPerfil2 from '../assets/img/fotosPerfil/fotoPerfil2.jpeg'
+import ImgPerfil3 from '../assets/img/fotosPerfil/fotoPerfil3.jpeg'
+import ImgPerfil4 from '../assets/img/fotosPerfil/fotoPerfil4.jpeg'
+import ImgPerfil5 from '../assets/img/fotosPerfil/fotoPerfil5.jpeg'
+import ImgPerfil6 from '../assets/img/fotosPerfil/fotoPerfil6.jpeg'
 
 
 import mulher from '../assets/img/mulher.svg'
@@ -31,38 +31,38 @@ function Home () {
 
     const recomendacoes = [
         {
-          nome: "Haruka",
+          nome: "Leonardo",
           curso: "Analista de Sistemas",
-          texto: "É ótimo ver uma abordagem tão humana e acessível à educação digital. Recomendo para meus alunos!",
+          texto: "Me ajudou a desenvolver habilidades essenciais para o mercado. Recomendo para todos que querem crescer na área!",
           foto: ImgPerfil1
         },
         {
-          nome: "Takashi",
-          curso: "Engenharia de Software",
+          nome: "Lucas Sousa",
+          curso: "Cientista de dados",
           texto: "Sempre admirei a dedicação da equipe. O aprendizado foi enriquecedor e a experiência prática fez toda a diferença.",
           foto: ImgPerfil2
         },
         {
-          nome: "Yuki",
-          curso: "Ciência da Computação",
-          texto: "O curso me ajudou a desenvolver habilidades essenciais para o mercado de trabalho. Recomendo para todos que querem crescer na área!",
+          nome: "Icaro Moreira",
+          curso: "Cientista da Computação",
+          texto: "É ótimo ver uma abordagem tão humana e acessível à educação digital. Recomendo para meus alunos!",
           foto: ImgPerfil3
         },
         {
-          nome: "Souta",
+          nome: "Gabriel Lucas",
           curso: "Desenvolvimento Web",
           texto: "A didática utilizada foi incrível! Aprendi muito sobre frameworks modernos e como aplicá-los em projetos reais.",
           foto: ImgPerfil4
         },
         {
-          nome: "Aoi",
-          curso: "Banco de Dados",
+          nome: "Ian Caleb",
+          curso: "Desenvolvedor Web",
           texto: "Um curso bem estruturado, com material de qualidade e professores que realmente entendem do assunto.",
           foto: ImgPerfil5
         },
         {
-          nome: "Ren",
-          curso: "Segurança da Informação",
+          nome: "Pedro Alexandre",
+          curso: "Designer Gráfico",
           texto: "Aprendi muito sobre cibersegurança e melhores práticas para proteger sistemas contra ataques.",
           foto: ImgPerfil6
         }
