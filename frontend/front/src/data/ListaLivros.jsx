@@ -10,7 +10,7 @@ import pdf2 from "../assets/pdf/logica-de-programacao.pdf"
 import pdf3 from "../assets/pdf/paradigmas_programacao.pdf"
 import pdf4 from "../assets/pdf/python_desenvolvedores.pdf"
 import pdf5 from "../assets/pdf/Algoritmos_e_programacao.pdf"
-import pdf6 from "../assets/pdf/TecnologiaInformação.pdf"
+import pdf6 from "../assets/pdf/TecnologiaInformacao.pdf"
 
 
 
