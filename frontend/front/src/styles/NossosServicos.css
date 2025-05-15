@@ -10,7 +10,7 @@ section.container-servicos {
 }
 
 .container-servicos h1{
-   font-size: 4vw;
+   font-size: 3.5vw;
    font-weight: 400;
 
    color: #2E2E2E;
@@ -18,28 +18,28 @@ section.container-servicos {
 
 
 .container-servicos h2{
-   font-size: 4vw;
+   font-size: 3.5vw;
    font-weight: bold;
 
    color: #213E60;
 }
 
 .container-servicos h3{
-   font-size: 4vw;
+   font-size: 3.5vw;
    font-weight: 400;
 
    color: #2E2E2E;
 }
 
 .container-servicos p{
-   font-size: 1.7vw;
+   font-size: 1.4vw;
    font-weight: 500;
 
    color: #565A61;
 }
 
 .container-servicos ul li{
-   font-size: 1.7vw;
+   font-size: 1.4vw;
    font-weight: 500;
 
    color: #565A61;
@@ -48,4 +48,61 @@ section.container-servicos {
 .container-servicos a{
    color: #565A61;
 }
-/* quando for acessar outra classe, usar .container-servicos primeiro e as outras classes que quiser usar */
+
+@media (min-width: 300px) and (max-width: 700px){
+
+   .container-servicos h1{
+      font-size: 6vw;
+      font-weight: 400;
+   }
+
+   .container-servicos h2{
+      font-size: 6vw;
+      font-weight: bold;
+   }
+
+   .container-servicos h3{
+      font-size: 6vw;
+      font-weight: 400;
+   }
+
+   .container-servicos p{
+      font-size: 3vw;
+      font-weight: 500;
+   }
+
+   .container-servicos ul li{
+      font-size: 3vw;
+      font-weight: 500;
+   }
+   
+}
+
+@media (max-width: 299px){
+
+   .container-servicos h1{
+      font-size: 8vw;
+      font-weight: 400;
+   }
+
+   .container-servicos h2{
+      font-size: 8vw;
+      font-weight: bold;
+   }
+
+   .container-servicos h3{
+      font-size: 8vw;
+      font-weight: 400;
+   }
+
+   .container-servicos p{
+      font-size: 3.5vw;
+      font-weight: 500;
+   }
+
+   .container-servicos ul li{
+      font-size: 3.5vw;
+      font-weight: 500;
+   }
+   
+}
