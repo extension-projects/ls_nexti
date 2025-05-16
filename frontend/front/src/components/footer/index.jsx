@@ -5,104 +5,191 @@ import Facebook from '../../assets/img/fb.svg'
 import WhatsApp2 from '../../assets/img/wpp.svg'
 import Linkedin from '../../assets/img/linkedin.svg'
 
-import {colors} from '../../colors'
+import { colors } from '../../colors'
 import { Link } from 'react-router-dom'
 
-import Swal from 'sweetalert2';
-
+import Swal from 'sweetalert2'
 
 import './style.css'
 
-export function Footer () {
+export function Footer() {
 
-      const mostrarAlerta = () => {
-          Swal.fire({
-          icon: "error",
-          title: "Oops...",
-          text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-        });
-      };
+  const reportarErro = async () => {
+    // Pergunta o nome
+    const { value: nome } = await Swal.fire({
+      title: 'Qual seu nome?',
+      input: 'text',
+      inputPlaceholder: 'Digite seu nome',
+      showCancelButton: true,
+      confirmButtonText: 'Próximo',
+      cancelButtonText: 'Cancelar',
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Por favor, informe seu nome!';
+        }
+      }
+    });
 
-    return (
+    if (!nome) return; // se cancelar, sai
 
-        <footer  style={{backgroundColor: colors.brand.primary}}>
-            <div className='footerContent'>
-                <div className='info'>
-                    <img src={LogoFooter} alt="Logo Footer" className='Logo'/>
-                    
-                </div>
+    // Pergunta a descrição do bug
+    const { value: descricao } = await Swal.fire({
+      title: 'Descreva o problema encontrado:',
+      input: 'textarea',
+      inputPlaceholder: 'Digite aqui...',
+      showCancelButton: true,
+      confirmButtonText: 'Enviar',
+      cancelButtonText: 'Cancelar',
+      inputValidator: (value) => {
+        if (!value) {
+          return 'Por favor, descreva o problema!';
+        }
+      }
+    });
 
-                <div className='navigations'>
-                    <div>
-                        <h4>Navegação</h4>
-                        <ul>
-                            <Link to={'/corpo-editorial'}>
-                            <li>Corpo Editorial</li>
-                            </Link>
-                            <Link to={'/codigo-de-etica'}>
-                            <li>Código de ética</li>
-                            </Link>
-                            <Link to={'/politica-de-privacidade'}>
-                            <li>Politica de Privacidade</li>
-                            </Link>
-                        </ul>
-                    </div>
+    if (!descricao) return;
 
-                    <div>
-                        <h4>Ajuda</h4>
-                        <ul>
-                        <Link onClick={mostrarAlerta}>
-                        <li>Fale conosco</li>
-                        </Link>
-                        <Link onClick={mostrarAlerta}>
-                        <li>Status da plataforma</li>
-                        </Link>
-                        <Link onClick={mostrarAlerta}>
-                        <li>Reportar erro</li>
-                        </Link>
-                        </ul>
-                    </div>
+    // Loading enquanto envia
+    let timerInterval;
+    Swal.fire({
+      title: 'Enviando...',
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector('b');
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 100);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      allowEnterKey: false,
+    });
 
-                    <div>
-                        <h4>Links úteis</h4>
-                        <ul>
-                        <Link onClick={mostrarAlerta}>
-                        <li>Termos de uso</li>
-                        </Link>
-                        <Link to={'/estante-virtual'}>
-                        <li>Estante virtual</li>
-                        </Link>
-                        <Link onClick={mostrarAlerta}>
-                        <li>Termos de consentimento</li>
-                        </Link>
-                        </ul>
-                    </div>
+    try {
+      const response = await fetch("http://localhost:5000/reportar", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ nome, descricao })
+      });
 
-                    <div>
-                        <h4>Contato</h4>
-                        <ul>
-                        <div className='contact'>
-                        <img src={WhatsAppLogo} alt="WhatsApp Logo" />
-                        <li>(88) 97433-7571</li>
-                        </div>
-                        </ul>
-                    </div>
+      Swal.close();
 
-                </div>
+      if (response.ok) {
+        Swal.fire(" Enviado!", "Bug reportado com sucesso.", "success");
+      } else {
+        Swal.fire(" Erro", "Não foi possível enviar o bug.", "error");
+      }
+    } catch (err) {
+      Swal.close();
+      Swal.fire(" Erro", "Erro de conexão com o servidor.", "error");
+    }
+  }
 
-            </div>
+  return (
+    <footer style={{ backgroundColor: colors.brand.primary }}>
+      <div className='footerContent'>
+        <div className='info'>
+          <img src={LogoFooter} alt="Logo Footer" className='Logo' />
+        </div>
 
-            <figure className='socialmedia'>
-                        <img src={Instagram} alt="" />
-                        <img src={WhatsApp2} alt="" />
-                        <img src={Linkedin} alt="" />
-                        <img src={Facebook} alt="" />
-                    </figure>
+        <div className='navigations'>
+          <div>
+            <h4>Navegação</h4>
+            <ul>
+              <Link to={'/corpo-editorial'}>
+                <li>Corpo Editorial</li>
+              </Link>
+              <Link to={'/codigo-de-etica'}>
+                <li>Código de ética</li>
+              </Link>
+              <Link to={'/politica-de-privacidade'}>
+                <li>Politica de Privacidade</li>
+              </Link>
+            </ul>
+          </div>
 
-            <hr />
+          <div>
+            <h4>Ajuda</h4>
+            <ul>
+              <Link onClick={() => Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+              })}>
+                <li>Fale conosco</li>
+              </Link>
+              <Link onClick={() => Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+              })}>
+                <li>Status da plataforma</li>
+              </Link>
 
-            <p>© 2020-2024 Created by Editora Learn Skills</p>
+              <li
+                onClick={reportarErro}
+                style={{ cursor: 'pointer', listStyleType: 'none' }}
+              >
+                Reportar erro
+              </li>
 
-        </footer>
-    )
+            </ul>
+          </div>
+
+          <div>
+            <h4>Links úteis</h4>
+            <ul>
+              <Link onClick={() => Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+              })}>
+                <li>Termos de uso</li>
+              </Link>
+              <Link to={'/estante-virtual'}>
+                <li>Estante virtual</li>
+              </Link>
+              <Link onClick={() => Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
+              })}>
+                <li>Termos de consentimento</li>
+              </Link>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contato</h4>
+            <ul>
+              <div className='contact'>
+                <img src={WhatsAppLogo} alt="WhatsApp Logo" />
+                <li>(88) 97433-7571</li>
+              </div>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <figure className='socialmedia'>
+        <img src={Instagram} alt="" />
+        <img src={WhatsApp2} alt="" />
+        <img src={Linkedin} alt="" />
+        <img src={Facebook} alt="" />
+      </figure>
+
+      <hr />
+
+      <p>© 2020-2024 Created by Editora Learn Skills</p>
+
+    </footer>
+  )
 }
