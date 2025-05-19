@@ -11,11 +11,13 @@ section.sobreNosContent {
     
 
     padding: 30px 5%;
+    max-width: 1200px;
 
     box-sizing: border-box;
 }
 
 .sobreNosContent .textos {
+    flex: 1 1 500px;
     padding-right: 20px;
 }
 
@@ -24,6 +26,9 @@ section.sobreNosContent {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*Poderia add flex-wrap: wrap; 
+    mas como o projeto não tem design para mobile
+    achei melhor não descaracterizar o design atual */
 }
 
 .sobreNosContent figure img{
@@ -92,5 +97,7 @@ section.sobreNosContent {
         width: 80vw;
     }
 }
+
+
 
 

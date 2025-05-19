@@ -15,9 +15,6 @@ import ImgLivro5 from "../assets/img/capasLivros/Algoritmos_programacao.png"
 import ImgLivro6 from "../assets/img/capasLivros/Introducao_tecnologias.png"
 
 
-
-
-
 function EstanteVirtual () {
     return (
         <>
@@ -32,10 +29,6 @@ function EstanteVirtual () {
 
             <div className="estanteContent">
                 <section className="container-estante">
-
-                    <div className="pesquisa">
-
-                    </div>
 
                     <div className="bigPicture">
                         <div className="line">
