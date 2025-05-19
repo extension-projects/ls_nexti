@@ -1,5 +1,8 @@
 import Logo from '../../assets/img/logo-ls.svg';
+import LogoP from "../../assets/img/logo-ls.png"
 import { Link } from 'react-router-dom';
+
+import { useState, useEffect } from 'react';
 
 import Icon from '../../assets/img/icon-profile.svg';
 import Search from '../../assets/img/search.svg';
@@ -33,9 +36,11 @@ export function Header () {
 
   return (
     <header className='header'>
-      <figure>
-        <img src={Logo} alt="Logo LS" />
-      </figure>
+      <picture>
+        <source media="(max-width: 768px)" srcSet={LogoP} />
+        <source media="(min-width: 769px)" srcSet={Logo} />
+        <img src={Logo} alt="Logo Learn skills" />
+      </picture>
 
       <div className='inputs'>
         <select name="" id="" defaultValue="">
@@ -55,14 +60,22 @@ export function Header () {
 
       </div>
 
-        
+      <div className="profile">
+          <button>Entrar</button>
+      </div>
 
-        <div className="profile">
-            <img src={Icon} alt="" />
-            <p>Bem-vindo visitante, <br />  
-                  <Link onClick={mostrarAlerta}>Faça o Login</Link> ou <Link onClick={mostrarAlerta}>Cadastre-se!</Link>
-            </p>
-        </div>
+        
     </header>
   );
 }
+
+
+
+/*
+<div className="profile">
+    <img src={Icon} alt="" />
+    <p>Bem-vindo visitante, <br />  
+          <Link onClick={mostrarAlerta}>Faça o Login</Link> ou <Link onClick={mostrarAlerta}>Cadastre-se!</Link>
+    </p>
+</div>
+*/
