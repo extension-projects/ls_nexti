@@ -1,5 +1,4 @@
 import LogoFooter from '../../assets/img/logo-footer.svg'
-import WhatsAppLogo from '../../assets/img/wpp-icon.svg'
 import Instagram from '../../assets/img/ig.svg'
 import Facebook from '../../assets/img/fb.svg'
 import WhatsApp2 from '../../assets/img/wpp.svg'
@@ -114,7 +113,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className='esquerda'>
             <h4>Ajuda</h4>
             <ul>
               <Link onClick={() => Swal.fire({
@@ -165,13 +164,18 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className='esquerda'>
             <h4>Contato</h4>
             <ul>
-              <div className='contact'>
-                <img src={WhatsAppLogo} alt="WhatsApp Logo" />
                 <li>(88) 97433-7571</li>
-              </div>
+                <li>
+                  <figure className='socialmedia'>
+                    <img src={Instagram} alt="" />
+                    <img src={WhatsApp2} alt="" />
+                    <img src={Linkedin} alt="" />
+                    <img src={Facebook} alt="" />
+                  </figure>
+                </li>
             </ul>
           </div>
 
@@ -179,12 +183,7 @@ export function Footer() {
 
       </div>
 
-      <figure className='socialmedia'>
-        <img src={Instagram} alt="" />
-        <img src={WhatsApp2} alt="" />
-        <img src={Linkedin} alt="" />
-        <img src={Facebook} alt="" />
-      </figure>
+
 
       <hr />
 
