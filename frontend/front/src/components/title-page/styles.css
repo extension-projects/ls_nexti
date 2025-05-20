@@ -46,3 +46,9 @@
     color: white;
     z-index: 2;
   }
+
+  @media (max-width: 768px) {
+    .title-page h1 {
+      font-size: 5vw;
+    }
+  }
