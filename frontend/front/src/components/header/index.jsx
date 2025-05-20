@@ -65,7 +65,7 @@ export function Header () {
       </div>
 
       <div className="profile">
-        <p><Link>Entrar</Link> | <Link>Cadastrar</Link></p>
+        <p><Link onClick={mostrarAlerta}>Entrar</Link> | <Link onClick={mostrarAlerta}>Cadastrar</Link></p>
         <img src={Icon} alt="" />
       </div>
 
