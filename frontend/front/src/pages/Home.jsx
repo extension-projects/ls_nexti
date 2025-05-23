@@ -24,9 +24,6 @@ import ImgPerfil4 from '../assets/img/fotosPerfil/fotoPerfil4.jpeg'
 import ImgPerfil5 from '../assets/img/fotosPerfil/fotoPerfil5.jpeg'
 import ImgPerfil6 from '../assets/img/fotosPerfil/fotoPerfil6.jpeg'
 
-
-import mulher from '../assets/img/mulher.svg'
- 
 function Home () {
 
     const recomendacoes = [
@@ -69,8 +66,8 @@ function Home () {
       ];
       
     return (
-        <>
-            <ScrollToTop/>
+        <div>
+          <ScrollToTop/>
             
             <div className="topo">
                 <Header />
@@ -78,59 +75,64 @@ function Home () {
             </div>
             <Header />
             <Navigation />
-            <section className="Banner">
-              <h1 className="banner-title">Publique seu <br />livro conosco</h1>
-              <p className="banner-paragraph">Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
-              <Link to={"/nossos-servicos"}><button className="banner-button">Saiba Mais</button></Link>
-            </section>
+            <div className="homeContent">
+              <section className="Banner">
+                <div className="textos">
+                  <h1 className="banner-title">Publique seu <br />livro conosco</h1>
+                  <p className="banner-paragraph">Faça parte de uma comunidade apaixonada pela palavra escrita. Nossa equipe editorial está pronta para elevar seu trabalho a novos horizontes.</p>
+                  <Link to={"/nossos-servicos"}><button className="banner-button">Saiba Mais</button></Link>
+                </div>   
+              </section>
 
-            <section className="container-livros">
-                <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
-                <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
-                <div className="livros">
-                    <Livro capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
-                    <Livro capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
-                    <Livro capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
-                </div>
+              <section className="container-livros">
+                  <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
+                  <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
+                  <div className="livros">
+                      <Livro className="pequeno" capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
+                      <Livro className="pequeno" capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
+                      <Livro className="pequeno" capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
+                  </div>
 
-                <Link to={"/estante-virtual"}><button>Encontre outros títulos</button></Link>
-            </section>
+                  <Link to={"/estante-virtual"}><button>Outros títulos</button></Link>
+              </section>
 
-            <section className="container-recomendacoes">
-                <div className="header-recomendacoes">
-                    <h3 className="recomendacoes-title">QUEM CONHECE <span style={{ color: "#213E60" }}>RECOMENDA</span></h3>
-                    <p className="recomendacoes-paragraph">Quem passa pela Learn Skills vive uma jornada de aprendizado transformadora. Nossos alunos <br /> e parceiros reconhecem o cuidado, a dedicação e a qualidade de tudo o que oferecemos.</p>
-                </div>
+              <section className="container-recomendacoes">
+                  <div className="header-recomendacoes">
+                      <h3 className="recomendacoes-title">QUEM CONHECE <span style={{ color: "#213E60" }}>RECOMENDA</span></h3>
+                      <p className="recomendacoes-paragraph">Quem passa pela Learn Skills vive uma jornada de aprendizado transformadora. Nossos alunos e parceiros reconhecem o cuidado, a dedicação e a qualidade de tudo o que oferecemos.</p>
+                  </div>
 
-                <div className="cards-recomendacoes"> 
-                        {recomendacoes.map((rec, index) => (
-                        <Recomendacao
-                            key={index}
-                            nome={rec.nome}
-                            curso={rec.curso}
-                            texto={rec.texto}
-                            foto={rec.foto}
-                        />
-                        
-                        ))}
-                    </div>  
+                  <div className="cards-recomendacoes"> 
+                          {recomendacoes.map((rec, index) => (
+                          <Recomendacao
+                              key={index}
+                              nome={rec.nome}
+                              curso={rec.curso}
+                              texto={rec.texto}
+                              foto={rec.foto}
+                          />
+                          
+                          ))}
+                      </div>  
 
 
 
-            </section>
+              </section>
 
-            <section className="container-editorial-section">
-                <div>
-                    <h3>CONHEÇA NOSSO <br /><span style={{ color: "#213E60" }}>CORPO EDITORIAL</span></h3>
-                    <p>Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
-                    <Link to={"/corpo-editorial"}><button>Saiba mais</button></Link>
-                </div>
+              <section className="container-editorial-section">
+                  <div>
+                      <h3>CONHEÇA NOSSO <br /><span style={{ color: "#213E60" }}>CORPO EDITORIAL</span></h3>
+                      <p>Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
+                      <Link to={"/corpo-editorial"}><button>Saiba mais</button></Link>
+                  </div>
 
-                <img className="container-editorial-section img" src={ImgCorpoEditorial} alt="" />
-            </section>
+                  <img src={ImgCorpoEditorial} alt="" />
+              </section>
+
+            </div>
             
             <Footer />
-        </>
+        </div>
     )
 }
 
