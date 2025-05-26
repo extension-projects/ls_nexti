@@ -21,3 +21,28 @@
     font-size: 1.3vw;
 }
 
+@media (max-width: 480px) {
+
+    .container-codigo h2{
+        font-size: 4.8vw;
+    }
+
+    .container-codigo p {
+        font-size: 3.2vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-codigo h2{
+        font-size: 4.8vw;
+    }
+
+    .container-codigo p {
+        font-size: 3.2vw;
+    }
+
+
+}
+
