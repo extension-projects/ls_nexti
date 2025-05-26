@@ -69,3 +69,71 @@ section .container-editorial {
   padding-bottom: 2vw;
 
 }
+
+@media (max-width: 480px) {
+
+  .container-editorial .title {
+    font-size: 4.8vw;
+    font-weight: bold;
+  
+  }
+
+  .container-editorial .chief-editor {
+    font-size: 2.6vw;
+  }
+
+  .container-editorial .editor-name {
+    font-weight: bold;
+    font-size: 3.2vw;
+    
+  }
+
+  .container-editorial .editor-role {
+    font-size: 2.4vw;
+
+  }
+
+  .container-editorial .editorial-list strong {
+    font-size: 3.2vw;
+  }
+
+  .container-editorial .section-title {
+    font-size: 2.4vw;
+
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .container-editorial .title {
+    font-size: 4.8vw;
+    font-weight: bold;
+  
+  }
+
+  .container-editorial .chief-editor {
+    font-size: 2.6vw;
+  }
+
+  .container-editorial .editor-name {
+    font-weight: bold;
+    font-size: 3.2vw;
+    
+  }
+
+  .container-editorial .editor-role {
+    font-size: 2.4vw;
+
+  }
+
+  .container-editorial .editorial-list strong {
+    font-size: 3.2vw;
+  }
+
+  .container-editorial .section-title {
+    font-size: 2.4vw;
+
+  }
+
+
+}
