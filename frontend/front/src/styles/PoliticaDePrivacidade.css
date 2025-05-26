@@ -25,3 +25,33 @@
 .container-politica p {
     font-size: 1.3vw;
 }
+
+@media (max-width: 480px) {
+    .container-politica .title{
+        font-size: 4.8vw;
+    }
+
+    .container-politica .subtitle{
+        font-size: 3vw;
+    }
+
+    .container-politica p {
+        font-size: 2.6vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-politica .title{
+        font-size: 4.8vw;
+    }
+
+    .container-politica .subtitle{
+        font-size: 3vw;
+    }
+
+    .container-politica p {
+        font-size: 2.6vw;
+    }
+
+}
