@@ -10,3 +10,19 @@
 .container-aviso img{
     width: 10vw;
 }
+
+@media (max-width: 480px) {
+    .container-aviso {
+        width: 80vw;
+        border-radius: 5vw;
+    }    
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .container-aviso {
+        width: 80vw;
+        border-radius: 5vw;
+    }  
+
+}
