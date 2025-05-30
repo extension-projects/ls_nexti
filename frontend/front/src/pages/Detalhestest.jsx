@@ -57,7 +57,7 @@ function Detalhestest() {
 
                         
                         <Link to={`/ler-online/${livro.id}`} >
-                            <button>Saiba Mais</button>
+                            <button>Ler Online</button>
                         </Link>
                         
 
@@ -71,12 +71,16 @@ function Detalhestest() {
                     <h3 className="visite-title">VISITE NOSSA <span style={{ color: "#213E60" }}>ESTANTE VIRTUAL</span></h3>
                     <p className="visite-paragraph">Descubra uma seleção especial de livros e materiais gratuitos para impulsionar seus estudos em tecnologia e programação. Explore conteúdos feitos por especialistas e desenvolva seu aprendizado no seu ritmo.</p>
                     <div className="livros">
-                        <Livro capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
-                        <Livro capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
-                        <Livro capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
+                        <Livro className="pequeno" capa={ImgLivro1} nome={'Algoritmos e Estrutura de Dados 1'} livroId={1}/>
+                        
+                        <Livro className="pequeno" capa={ImgLivro2} nome={'Lógica de Programação para Iniciantes'} livroId={2}/>
+
+                        <Livro className="pequeno" capa={ImgLivro3} nome={'Paradigmas de programação: Uma introdução'} livroId={3}/>
                     </div>
+                    <br />
     
                     <Link to={"/estante-virtual"}><button>Encontre outros títulos</button></Link>
+                    <br /><br /><br />
                 </section>
 
             </div>
