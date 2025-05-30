@@ -35,7 +35,7 @@ section.container-servicos {
    font-size: 1.4vw;
    font-weight: 500;
 
-   color: #565A61;
+   color: #2E2E2E;
 }
 
 .container-servicos ul li{
@@ -45,9 +45,15 @@ section.container-servicos {
    color: #565A61;
 }
 
-.container-servicos a{
-   color: #565A61;
+.container-servicos .ulExterno ul li{
+      color: #565A61;
 }
+
+.container-servicos .ulExterno li{
+      color: #2E2E2E;
+}
+
+
 
 @media (min-width: 300px) and (max-width: 700px){
 
@@ -104,5 +110,4 @@ section.container-servicos {
       font-size: 3.5vw;
       font-weight: 500;
    }
-   
 }

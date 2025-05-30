@@ -21,53 +21,64 @@ function NossosServicos () {
             <TitlePage title={"Conheça nossos serviços"} />
 
             <section className="container-servicos">
-                <h1 className="title">Livros Eletrônicos (eBooks)</h1>
-                <p className="intro">
-                    Na Editora Learn Skills, oferecemos uma plataforma aberta para a publicação de livros eletrônicos (eBooks), 
-                    fornecendo uma oportunidade para autores compartilharem seus conhecimentos com uma audiência global. Nossa 
-                    modalidade de publicação de eBooks é projetada para maximizar a acessibilidade e o alcance de suas obras.
+
+                <h1 className="title">Serviços de Publicação da Editora Learnskills</h1>
+                <p >
+                    Na Editora Learnskills, nosso compromisso é oferecer um suporte completo aos autores, desde a concepção até a distribuição de suas obras. Compreendemos que cada projeto é único, e por isso, disponibilizamos uma variedade de formatos e serviços para atender às suas necessidades e objetivos.
                 </p>
 
-                <h2 className="subtitle">2.1 eBooks de Acesso Aberto</h2>
-                <p className="text">
-                    Autores têm a opção de publicar seus eBooks em acesso aberto, onde o conteúdo é disponibilizado gratuitamente para 
-                    leitura online. Neste modelo, o autor se assume a taxa de processamento de manutenção para publicação. O autor também 
-                    tem a opção de adquirir edições impressas (mínimo de exemplares) para distribuição entre seus colaboradores.
-                </p>
-
-                <h2 className="subtitle">2.2 eBooks Comercializados</h2>
-                <p className="text">
-                    Oferecemos a oportunidade para autores publicarem eBooks comerciais, onde o autor financia a produção do eBook que 
-                    será disponibilizado para compra em nossa livraria digital. Esse formato permite que autores alcancem um audiência 
-                    mais ampla e também possam ter receita sobre suas obras.
-                </p>
-
-                <h3 className="subsection">2.2.1 Projeto Gráfico do eBook</h3>
-                <ul className="list">
-                    <li>Formato padrão que amplia o acesso a maior diversidade de dispositivos</li>
-                    <li>Layout responsivo para garantir uma experiência de leitura otimizada em diferentes dispositivos (eReader, tablets, smartphones)</li>
-                    <li>Possibilidade de incluir elementos gráficos que enriqueçam o layout interno, maximizando o apelo visual e a usabilidade do conteúdo</li>
+                <ul className="ulExterno">
+                    <li><strong>E-books (Acesso Aberto e Comercializados):</strong></li>
+                    <ul className="ulInterno">
+                        <li>
+                            E-books de Acesso Aberto: Alinhados à filosofia da ciência aberta, disponibilizamos e-books gratuitamente para download em nosso site. Essa modalidade maximiza a visibilidade e o impacto de sua pesquisa, garantindo que o conhecimento alcance o maior número de leitores sem barreiras.
+                        </li>
+                        <br />
+                        <li>
+                            E-books Comercializados: Para autores que buscam retorno financeiro e uma distribuição ampliada, oferecemos a publicação de e-books para venda em diversas plataformas online. Cuidamos de toda a gestão de direitos e distribuição, permitindo que sua obra monetizada alcance um público global.
+                        </li>
+                        <br />
+                    </ul>
+                    <li><strong>Livros Impressos (Físicos):</strong></li>
+                    <ul className="ulInterno">
+                        <li>
+                            Impressão Sob Demanda (Print on Demand - POD): A Learnskills oferece a opção de publicação de livros físicos através do inovador sistema de impressão sob demanda. . Essa modalidade é ideal para autores que desejam a versão física de suas obras sem os riscos de um grande estoque. Seus livros estarão disponíveis para compra em nosso site e em plataformas de parceiros, sendo impressos e enviados diretamente ao leitor após a confirmação da compra.
+                        </li>
+                        <br />
+                    </ul>
+                    <li><strong>Serviços Editoriais Complementares:</strong>
+                         Para garantir a excelência e o profissionalismo de cada publicação, a Learnskills oferece, opcionalmente, uma série de serviços editoriais que podem ser contratados pelos autores para aprimorar ainda mais seus materiais:
+                    </li>
+                    <ul className="ulInterno">
+                        <li>
+                            Revisão Textual (Ortografia e Gramática): Garantimos que sua obra esteja impecável, livre de erros gramaticais e ortográficos, com total fluidez de leitura
+                        </li>
+                        <br />
+                        <li>
+                            Copidesque e Preparação de Texto: Para um aprimoramento mais profundo do conteúdo, coerência e estilo, nossa equipe de copidesque refina o texto, tornando-o mais claro, conciso e impactante.
+                        </li>
+                        <br />
+                        <li>
+                            Diagramação e Projeto Gráfico: Criamos layouts profissionais e atraentes para o miolo de sua obra, assegurando uma experiência de leitura agradável tanto em formato digital quanto impresso.
+                        </li>
+                        <br />
+                        <li>
+                            Design de Capa Personalizado: Uma capa impactante é essencial para o sucesso de uma obra. Nossos designers desenvolvem capas exclusivas que refletem a essência do seu material e atraem o público-alvo.
+                        </li>
+                        <br />
+                        <li>
+                            Registro de ISBN e Ficha Catalográfica: Realizamos o registro internacional da sua obra (ISBN) com ou sem código de barras e a elaboração da ficha catalográfica, itens essenciais para a identificação e catalogação do seu livro em bibliotecas e livrarias.
+                        </li>
+                        <br />
+                        <li>
+                            DOI (Digital Object Identifier) para Capítulos/Artigos: Para obras que contenham capítulos ou artigos científicos, oferecemos o registro de DOI individual, aumentando a rastreabilidade e a visibilidade da pesquisa.
+                        </li>
+                        <br />
+                    </ul>
+                    <p>
+                        Normalização de Referências (ABNT, APA, Vancouver, etc.): Adaptamos as referências e citações da sua obra às normas técnicas exigidas (ABNT, APA, Vancouver, entre outras), garantindo a padronização e o rigor acadêmico.
+                    </p>
                 </ul>
-
-                <h2 className="subtitle">2.3 Processo Editorial</h2>
-                <p className="text">
-                    Na Editora Learn Skills, nos comprometemos a oferecer um processo editorial transparente e de alta qualidade para 
-                    todos os eBooks publicados. 
-                </p>
-
-                <ul className="list">
-                    <li>Atribuição de ISBN (International Standard Book Number) para identificação oficial do eBook.</li>
-                    <li>Revisão ortográfica e gramatical para garantir a qualidade do conteúdo.</li>
-                    <li>Criação de capa personalizada, considerando a identidade visual do eBook.</li>
-                    <li>Conversão do eBook para formatos compatíveis com diversos dispositivos, garantindo identificação e compatibilidade.</li>
-                    <li>Distribuição digital através da nossa plataforma e parceiros de mercado.</li>
-                    <li>Opção de impressão sob demanda para versões físicas, facilitando a reprodução e revenda do conteúdo de forma eficaz.</li>
-                </ul>
-
-                <p className="text">
-                    Envie seu eBook para avaliação através de <a href="#" className="link">[Endereço de e-mail aqui]</a> ou consulte nosso 
-                    calendário de submissões e títulos com chamadas abertas no site.
-                </p>
 
             </section>
 
