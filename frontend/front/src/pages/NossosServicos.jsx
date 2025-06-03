@@ -79,6 +79,44 @@ function NossosServicos () {
                         Normalização de Referências (ABNT, APA, Vancouver, etc.): Adaptamos as referências e citações da sua obra às normas técnicas exigidas (ABNT, APA, Vancouver, entre outras), garantindo a padronização e o rigor acadêmico.
                     </p>
                 </ul>
+                <h1>
+                O Processo Editorial na Learnskills
+                </h1>
+                <p>Na Editora Learnskills, nosso processo editorial é rigoroso e transparente, garantindo a qualidade e a relevância de todas as nossas publicações. Entendemos que cada obra é única, e nosso fluxo de trabalho é desenhado para apoiar os autores em todas as etapas, desde a submissão até a publicação final.
+                </p>
+                <p><strong>Etapas do Processo Editorial para E-books e Livros Impressos:</strong></p>
+                <ol className="olProcesso">
+                    <li>
+                Submissão: O processo inicia-se com a submissão do seu manuscrito (detalhes sobre como submeter logo abaixo).
+                </li>
+                <br />
+                <li>
+                Avaliação Preliminar: A equipe editorial realiza uma análise inicial para verificar a adequação do material à linha editorial da Learnskills e aos requisitos básicos de formatação e qualidade.
+                </li>
+                <br />
+                <li>Parecer de Pares (Peer Review): O manuscrito é enviado a especialistas na área (avaliadores cegos ou duplamente cegos, conforme a política da obra) para uma avaliação aprofundada de seu conteúdo, originalidade, metodologia e relevância. Esta etapa é crucial para aprimorar a obra.
+                </li>
+                <br />
+                <li>Decisão Editorial: Com base nos pareceres dos avaliadores, os Editores Chefes, Fabrício Carneiro Costa e Samyra Paula Lustoza Xavier, juntamente com o Comitê Executivo, tomam a decisão sobre a aceitação, revisão ou recusa do manuscrito.
+                </li>
+                <br />
+                <li>Revisão e Aprimoramento: Em caso de aceite com ressalvas ou solicitação de revisão, o autor trabalha no aprimoramento do manuscrito, incorporando as sugestões e correções indicadas pelos avaliadores e editores.
+                </li>
+                <br />
+                <li>Edição e Copidesque: A equipe editorial realiza a revisão de texto, gramática, ortografia e estilo, além de padronizar a linguagem e garantir a clareza e coesão da obra.
+                </li>
+                <br />
+                <li>Diagramação e Formatação: O manuscrito é diagramado para o formato de e-book e/ou livro impresso, garantindo uma leitura agradável em diferentes dispositivos, e é preparada a versão final para publicação.
+                </li>
+                <br />
+                <li>Criação de Metadados e ISBN: São gerados os metadados da obra (informações para identificação e catalogação) e solicitado o ISBN (International Standard Book Number), essencial para a identificação da publicação.
+                </li>
+                <br />
+                <li>Publicação e Lançamento: A obra é publicada em nosso website (para e-books de acesso aberto), distribuída para as plataformas de vendas (para e-books comercializados) e/ou disponibilizada para impressão sob demanda, e anunciada em nossos canais de comunicação.
+                </li>
+                <br />
+                </ol>
+                
 
             </section>
 

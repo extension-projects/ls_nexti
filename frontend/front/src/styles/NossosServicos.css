@@ -53,7 +53,19 @@ section.container-servicos {
       color: #2E2E2E;
 }
 
+.container-servicos .olProcesso ol{
+   font-size: 1.4vw;
+   font-weight: 500;
 
+   color: #565A61;
+}
+
+.container-servicos .olProcesso li{
+   font-size: 1.4vw;
+   font-weight: 500;
+
+   color: #2E2E2E;
+}
 
 @media (min-width: 300px) and (max-width: 700px){
 
