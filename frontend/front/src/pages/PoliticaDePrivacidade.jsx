@@ -19,79 +19,69 @@ function PoliticaDePrivacidade () {
             <TitlePage title="Política de Privacidade" />
             <section className="container-politica">
                 <div className="aviso">
-                    <Aviso text='A Editora Learn Skills valoriza e respeita a privacidade de seus usuários, autores e parceiros. Esta Política de Privacidade descreve como coletamos, usamos, compartilhamos e protegemos as informações pessoais que você fornece quando utiliza nossos serviços ou visita nosso site.' />
+                    <Aviso text='A Editora Learnskills valoriza e respeita a sua privacidade. Esta política descreve como coletamos, usamos, armazenamos e protegemos as informações pessoais de nossos usuários, autores, avaliadores e leitores, em conformidade com a legislação vigente, incluindo a Lei Geral de Proteção de Dados (LGPD) no Brasil.' />
                 </div>
 
-                <h1 className="title">Editora Learn Skills</h1>
+                <ol className="ulExterno">
+                    <li><strong>Coleta de Informações:</strong> Coletamos informações para operar nossos serviços de forma eficiente e oferecer a melhor experiência. Isso pode incluir:</li>
+                    <ul>
+                        <li>Informações de Cadastro: Nome completo, e-mail, afiliação institucional, ORCID, dados de contato e credenciais de acesso, fornecidos ao criar uma conta, submeter um manuscrito ou se inscrever em nossa newsletter.</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Coleta de Informações</h2>
-                    <div className="content">
-                        <p>
-                            <strong>Informações fornecidas por você: </strong>
-                            Coletamos informações pessoais que você nos fornece de forma voluntária ao criar uma conta, preencher formulários, submeter manuscritos, participar de eventos ou entrar em contato com nossa equipe.
-                        </p>
-                    </div>
-                    <div className="content">
-                        <p>
-                            <strong>Informações coletadas automaticamente: </strong>
-                            Ao acessar nosso site ou utilizar nossos serviços, podemos coletar dados técnicos automaticamente, como endereço IP, tipo de navegador, idioma, páginas acessadas, data e hora de acesso, além de informações sobre o dispositivo utilizado.
-                        </p>
-                    </div>
-                </section>
+                        <li>Informações de Transação: Dados necessários para processar pagamentos (se aplicável, para e-books comercializados ou serviços opcionais), como endereço de cobrança. Não armazenamos dados de cartão de crédito.</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Uso das Informações</h2>
-                    <p>
-                        As informações coletadas são utilizadas para oferecer, manter e aprimorar nossos serviços. Isso inclui o processamento de envios de obras, a comunicação com os usuários, a personalização de conteúdos, o suporte técnico, a realização de análises internas e o cumprimento de obrigações legais. Também podemos utilizá-las para envio de atualizações relevantes, desde que autorizado.
-                    </p>
-                </section>
+                        <li>Dados de Navegação: Informações coletadas automaticamente sobre sua interação com nosso site, como endereço IP, tipo de navegador, páginas visitadas, tempo de permanência e dados de cookies, para otimizar a usabilidade e a segurança.</li><br />
+                    </ul>
 
-                <section className="section">
-                    <h2 className="subtitle">Compartilhamento de Informações</h2>
-                    <p>
-                        Não vendemos nem alugamos informações pessoais. Compartilhamos dados apenas com terceiros confiáveis quando necessário para operar a plataforma, como serviços de hospedagem, envio de e-mails ou processamento de pagamentos, sempre com contratos que garantem a segurança das informações.
-                    </p>
-                </section>
+                    <li><strong>Uso das Informações:</strong> As informações coletadas são utilizadas para:</li>
+                    <ul>
+                        <li>Processar submissões de manuscritos e gerenciar o processo editorial.</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Proteção de Informações</h2>
-                    <p>
-                        Adotamos medidas técnicas e organizacionais apropriadas para proteger suas informações pessoais contra acesso não autorizado, perda, uso indevido, alteração ou divulgação. Os dados são armazenados em servidores seguros com acesso restrito. Recomendamos que os usuários também tomem precauções, como o uso de senhas fortes.
-                    </p>
-                </section>
+                        <li>Comunicar-se com autores e avaliadores sobre o status de suas submissões e avaliações.</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Cookies e Tecnologias de Rastreamento</h2>
-                    <p>
-                        Utilizamos cookies e tecnologias semelhantes para melhorar o desempenho do site, entender o comportamento dos visitantes e personalizar a experiência do usuário. Você pode gerenciar suas preferências nas configurações do navegador, podendo aceitar, recusar ou ser notificado sobre cookies.
-                    </p>
-                </section>
+                        <li>Personalizar a experiência do usuário em nosso site.</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Seus Direitos</h2>
-                    <p>
-                        Você tem o direito de acessar, corrigir, atualizar ou excluir suas informações pessoais. Também pode solicitar uma cópia dos dados armazenados ou revogar consentimentos dados anteriormente. Para exercer esses direitos, entre em contato conosco pelos canais abaixo.
-                    </p>
-                </section>
+                        <li>Distribuir e comercializar e-books e livros impressos (quando aplicável).</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Alterações na Política</h2>
-                    <p>
-                        Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças legais, técnicas ou operacionais. Caso haja alterações relevantes, informaremos pelos canais adequados. Recomendamos a revisão regular deste documento.
-                    </p>
-                </section>
+                        <li>Enviar newsletters e comunicações sobre novas publicações ou serviços (com sua permissão).</li><br />
 
-                <section className="section">
-                    <h2 className="subtitle">Contato</h2>
-                    <p>
-                        Em caso de dúvidas ou solicitações relacionadas à privacidade, entre em contato conosco pelo e-mail: <strong>contato@learnskillseditora.com</strong> ou através da nossa página de suporte.
-                    </p>
-                </section>
+                        <li>Melhorar nossos serviços, produtos e o funcionamento do site.</li><br />
 
-                <div className="aviso">
-                    <Aviso text='Ao utilizar nossos serviços ou fornecer informações pessoais, você concorda com os termos descritos nesta Política de Privacidade. Se tiver dúvidas ou preocupações sobre nossa Política de Privacidade, entre em contato conosco.' />
-                </div>
+                        <li>Cumprir obrigações legais e regulatórias.</li><br />
+                    </ul>
+
+                    <li><strong>Compartilhamento de Informações:</strong> A Editora Learnskills não vende, aluga ou compartilha suas informações pessoais com terceiros para fins de marketing sem o seu consentimento explícito. O compartilhamento de dados pode ocorrer estritamente nas seguintes situações:</li>
+
+                    <ul>
+                        <li>Com avaliadores no processo de peer review (com anonimização, quando aplicável).</li><br />
+
+                        <li>Com fornecedores de serviços essenciais para a operação da editora (ex: plataformas de pagamento, serviços de impressão sob demanda, provedores de hospedagem), que são contratualmente obrigados a proteger suas informações.</li><br />
+
+                        <li>Para cumprir obrigações legais ou responder a processos judiciais válidos.</li><br />
+                    </ul>
+
+                    <li><strong>Segurança das Informações:</strong> Empregamos medidas de segurança técnicas, administrativas e físicas para proteger suas informações pessoais contra acesso não autorizado, uso indevido, alteração, divulgação ou destruição. Isso inclui criptografia, firewalls e controle de acesso.</li>
+
+                    <li><strong>Seus Direitos:</strong> De acordo com a LGPD e outras leis de privacidade aplicáveis, você tem o direito de:</li>
+
+                    <ul>
+                        <li>Acessar suas informações pessoais.</li><br />
+                        
+                        <li>Solicitar a correção de dados incompletos, inexatos ou desatualizados.</li><br />
+
+                        <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos.</li><br />
+
+                        <li>Revogar o consentimento a qualquer momento (quando o tratamento for baseado no consentimento).</li><br />
+
+                        <li>Solicitar a portabilidade dos dados.</li><br />
+
+                        <li>Opor-se ao tratamento de dados (em certas circunstâncias).</li><br />
+                    </ul>
+
+                    <p>Para exercer qualquer um desses direitos ou para quaisquer dúvidas sobre nossas políticas de privacidade, entre em contato conosco através do e-mail learnskillscursos@gmail.com.</p>
+
+                    <li><strong>Alterações na Política de Privacidade:</strong> Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas em nosso site, e a data da última atualização será revisada. Recomendamos que você revise esta página regularmente para se manter informado.</li>
+                </ol>
+
             </section>
             <Footer />
         </>

@@ -22,11 +22,37 @@
     margin-top: 50px;
 }
 
-.container-politica p {
-    font-size: 1.3vw;
+.container-politica p{
+   font-size: 2.6vw;
+   font-weight: 500;
+
+   color: #2E2E2E;
 }
 
+.container-politica ul li{
+   font-size: 2.6vw;
+   font-weight: 500;
+
+   color: #565A61;
+}
+
+.container-politica .ulExterno ul li{   
+    color: #565A61;
+    
+}
+
+.container-politica .ulExterno li{
+      color: #2E2E2E;
+      font-size: 3.2vw;
+}
+
+.container-politica a{
+      color: #176ac8;
+}
+
+
 @media (max-width: 480px) {
+
     .container-politica .title{
         font-size: 4.8vw;
     }
