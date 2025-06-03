@@ -31,7 +31,7 @@ section.sobreNosContent {
 }
 
 .sobreNosContent figure img{
-    width: 40vw;
+    height: 40vw;
     margin-right: 0px;
     object-fit: cover;
 }
@@ -75,6 +75,7 @@ section.sobreNosContent {
 
     .sobreNosContent figure img{
         width: 80vw;
+        height: auto;
     }
 
 }
@@ -99,6 +100,7 @@ section.sobreNosContent {
 
     .sobreNosContent figure img{
         width: 80vw;
+        height: auto;
     }
 }
 
