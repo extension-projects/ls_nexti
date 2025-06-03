@@ -22,32 +22,28 @@ function CodigoDeEtica () {
 
             <section className="container-codigo">
                 <div className="aviso">
-                    <Aviso text='Na Learn Skills, acreditamos no poder transformador da leitura e no valor da palavra escrita como meio de expressão, diálogo e construção de conhecimento. Nosso Código de Ética orienta a conduta de todos os envolvidos em nossa plataforma — autores, colaboradores, leitores e equipe editorial — e garante um ambiente seguro, respeitoso e comprometido com a qualidade literária e ética.' />
+                    <Aviso text='Na Editora Learnskills, a integridade, a transparência e a responsabilidade são os pilares de todas as nossas operações. Nosso Código de Ética reflete o compromisso inabalável com os mais altos padrões de conduta profissional e editorial, garantindo um ambiente justo e respeitoso para autores, leitores, colaboradores e toda a comunidade acadêmica.' />
                 </div>
 
-                <h2>Respeito à Diversidade e à Liberdade de Expressão</h2>
-                <p>Valorizamos a pluralidade de ideias, culturas, estilos e vozes, compreendendo que a diversidade é uma fonte essencial de riqueza literária e social. Promovemos a liberdade de expressão como princípio fundamental, desde que exercida com responsabilidade e empatia. Obras que apresentem opiniões críticas ou reflexões desafiadoras são bem-vindas, desde que não promovam discursos de ódio, preconceito, violência ou discriminação de qualquer natureza. Buscamos criar um espaço onde todas as vozes possam ser ouvidas com respeito e dignidade, sem silenciamento ou exclusão.</p>
+                <h2>Nossos Princípios Fundamentais:</h2>
+                
+                <ul>
+                    <li><strong>Integridade e Transparência:</strong> Atuamos com honestidade e clareza em todas as interações. Nossas políticas e processos são comunicados de forma aberta, e somos transparentes quanto às decisões editoriais e financeiras.</li><br />
 
-                <h2>Responsabilidade com o Conteúdo</h2>
-                <p>Todo conteúdo submetido à nossa plataforma deve ser original e de autoria própria, ou então acompanhado das devidas autorizações legais para publicação. É estritamente proibido o plágio, bem como o uso indevido de textos, imagens ou ideias de terceiros sem crédito ou permissão. Obras que contenham pornografia explícita, apologia à violência, racismo, misoginia, LGBTfobia, capacitismo ou qualquer outra forma de intolerância serão imediatamente rejeitadas. Prezamos pela integridade editorial, pela honestidade intelectual e pela responsabilidade social de cada material disponibilizado.</p>
+                    <li><strong>Qualidade e Rigor Científico:</strong> Comprometemo-nos a publicar apenas obras que apresentem excelência, originalidade e rigor metodológico. Nosso processo de avaliação por pares é imparcial e busca garantir a qualidade e a relevância do conteúdo.</li><br />
 
-                <h2>Processo de Avaliação Ético e Transparente</h2>
-                <p>As obras submetidas são avaliadas por colaboradores experientes, com base em critérios técnicos (clareza, coerência, originalidade) e éticos (respeito aos direitos humanos e às diretrizes editoriais). O processo é realizado de forma imparcial e sem favoritismo, respeitando o estilo individual de cada autor. Trabalhamos com empatia e cuidado, oferecendo feedback construtivo sempre que possível. Caso a obra não seja aprovada, o autor receberá uma justificativa clara e, quando apropriado, sugestões para reestruturação ou melhorias.</p>
+                    <li><strong>Imparcialidade e Equidade:</strong> Tratamos todos os autores, avaliadores e colaboradores com justiça e sem preconceitos, independentemente de origem, gênero, etnia, crença ou qualquer outra característica pessoal. As decisões editoriais são baseadas exclusivamente no mérito da obra.</li><br />
 
-                <h2>Compromisso com a Privacidade e a Segurança</h2>
-                <p>Respeitamos profundamente a privacidade de nossos usuários. Todas as informações pessoais e arquivos enviados são armazenados com segurança e tratados com confidencialidade. Utilizamos práticas de proteção de dados alinhadas às legislações vigentes, como a LGPD, garantindo que nenhuma informação será compartilhada com terceiros sem autorização. O conteúdo submetido será publicado apenas com o consentimento explícito do autor, assegurando seu controle sobre a exposição de sua obra.</p>
+                    <li><strong>Respeito à Propriedade Intelectual:</strong> Reconhecemos e protegemos os direitos autorais e a propriedade intelectual de todos os envolvidos. O plágio e a apropriação indevida de ideias são veementemente condenados e passíveis de sanções.</li><br />
 
-                <h2>Conduta dos Usuários</h2>
-                <p>Esperamos que todos os usuários mantenham uma conduta respeitosa, ética e colaborativa nas interações dentro da plataforma. Comentários ofensivos, abusivos ou que infrinjam este código serão moderados e poderão resultar em advertência, suspensão temporária ou exclusão da conta. Nosso ambiente virtual deve ser seguro para todos os participantes, estimulando o diálogo saudável, a crítica literária construtiva e a valorização mútua entre autores, leitores e avaliadores. A participação consciente fortalece nossa comunidade e amplia o impacto positivo da literatura.</p>
+                    <li><strong>Confidencialidade:</strong> Garantimos a confidencialidade das informações de manuscritos submetidos, dados de autores e avaliadores, antes, durante e após o processo editorial, conforme nossas políticas de privacidade.</li><br />
 
-                <h2>Valorização da Comunidade Literária</h2>
-                <p>Acreditamos que a literatura é construída de forma coletiva e que cada contribuição tem valor. Encorajamos a leitura crítica, o apoio entre escritores, o compartilhamento de experiências e o reconhecimento do trabalho alheio. Promovemos ações que visam destacar novos talentos, oferecer visibilidade a autores independentes e criar um ecossistema literário dinâmico, acolhedor e diverso. Nossa estante virtual é mais do que um espaço de exposição — é um lugar de encontro, aprendizado e celebração da escrita.</p>
-                <br />
+                    <li><strong>Responsabilidade Social e Ambiental:</strong> Buscamos operar de forma sustentável, considerando o impacto de nossas ações na sociedade e no meio ambiente, e promovendo a diversidade e a inclusão.</li><br />
 
+                    <li><strong>Conflito de Interesses:</strong> Exigimos que todos os envolvidos no processo editorial (editores, avaliadores, autores) declarem quaisquer conflitos de interesse que possam comprometer a imparcialidade das decisões ou a integridade da publicação.</li><br />
 
-                <div className="aviso">
-                    <Aviso text='Ao aderir a este Código de Ética, tanto a Editora Learn Skills quanto seus autores comprometem-se a promover e respeitar esses princípios em todas as suas interações e atividades editoriais.' />
-                </div>
+                    <p>Este Código de Ética serve como guia para todas as nossas ações e decisões, reforçando nosso compromisso com uma publicação responsável e confiável.</p>
+                </ul>
             </section>
             <Footer />
         </>
