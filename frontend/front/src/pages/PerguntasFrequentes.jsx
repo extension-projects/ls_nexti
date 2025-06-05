@@ -10,6 +10,8 @@ import IMGFrequentes2 from '../assets/img/img-perguntas2.svg'
 
 import ScrollToTop from "../features/ScrollTop";
 
+import FAQ from "../components/FAQ/FAQ";
+
 function PerguntasFrequentes () {
     return (
         <div>
@@ -21,62 +23,13 @@ function PerguntasFrequentes () {
             <Header />
             <Navigation />
             <TitlePage title={"Perguntas Frequentes"} />
-            <section className="perguntasContent">
-                <div>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                        
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                </div>
-                
-                <img src={IMGFrequentes1} alt="" />
+            <section >
+                <FAQ />
             </section>
             
-            <section className="perguntasContent">
-                <img src={IMGFrequentes2} alt="" />
-                <div>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                        
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                    <select name="" id="">
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                        <option value="asdsad">Como publicar nessa editora?</option>
-                    
-                    </select>
-                </div>
-                
-                
-            </section>
+
+            
+            <br /><br />
             <Footer />
         </div>
     )

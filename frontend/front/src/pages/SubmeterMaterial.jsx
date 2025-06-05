@@ -18,7 +18,7 @@ function SubmeterMaterial () {
             </div>
             <Header />
             <Navigation />
-            <TitlePage title={"Sobre nós"} />
+            <TitlePage title={"Submeter material"} />
             <div className="SubmeterMaterialContent">
                 <h1>Como Submeter Seu Material para Publicação</h1>
                 <p>
@@ -171,7 +171,7 @@ function SubmeterMaterial () {
 
                 <h2>7. Dúvidas e Suporte</h2>
 
-                <p>Em caso de dúvidas sobre o processo de submissão ou as diretrizes, por favor, entre em contato com nossa equipe editorial através do e-mail: <a href="">learnskillscursos@gmail.com</a></p>
+                <p>Em caso de dúvidas sobre o processo de submissão ou as diretrizes, por favor, entre em contato com nossa equipe editorial através do e-mail: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=learnskillscursos@gmail.com&su=Contato%20do%20Learning%20Skills&body=Olá,%20vim%20pelo%20site%20da%20learning%20skills%20e%20gostaria%20de%20falar%20sobre...">learnskillscursos@gmail.com</a></p>
 
                 <p>Agradecemos o seu interesse em publicar com a Editora Learnskills.</p>
             </div>

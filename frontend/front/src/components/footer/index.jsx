@@ -116,20 +116,12 @@ export function Footer() {
           <div className='esquerda'>
             <h4>Ajuda</h4>
             <ul>
-              <Link onClick={() => Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-              })}>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=learnskillscursos@gmail.com&su=Contato%20do%20Learning%20Skills&body=Olá,%20vim%20pelo%20site%20da%20learning%20skills%20e%20gostaria%20de%20falar%20sobre...">
                 <li>Fale conosco</li>
-              </Link>
-              <Link onClick={() => Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-              })}>
-                <li>Status da plataforma</li>
-              </Link>
+              </a>
+                
+              
+              
 
               <li
                 onClick={reportarErro}
@@ -144,22 +136,20 @@ export function Footer() {
           <div>
             <h4>Links úteis</h4>
             <ul>
-              <Link onClick={() => Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-              })}>
-                <li>Termos de uso</li>
-              </Link>
               <Link to={'/estante-virtual'}>
                 <li>Estante virtual</li>
               </Link>
+
+              <Link to={'/perguntas-frequentes'}>
+                <li>FAQ</li>
+              </Link>
+
               <Link onClick={() => Swal.fire({
                 icon: "error",
                 title: "Oops...",
                 text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
               })}>
-                <li>Termos de consentimento</li>
+                <li>Termos</li>
               </Link>
             </ul>
           </div>
