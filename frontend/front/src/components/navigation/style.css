@@ -12,10 +12,14 @@ nav a{
     color: white;
     text-decoration: none;
     font-size: 1.5vw;
+
+    transition: 0.5s;
 }
 
 nav a:hover{
     color: #EB973E;
+    scale: 1.1;
+    
 }
 
 nav {

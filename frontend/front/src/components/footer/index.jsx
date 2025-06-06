@@ -158,14 +158,17 @@ export function Footer() {
             <h4>Contato</h4>
             <ul>
                 <li>(88) 97433-7571</li>
-                <li>
-                  <figure className='socialmedia'>
-                    <img src={Instagram} alt="" />
-                    <img src={WhatsApp2} alt="" />
-                    <img src={Linkedin} alt="" />
-                    <img src={Facebook} alt="" />
-                  </figure>
-                </li>
+                <ul>
+                  <li>
+                    <figure className='socialmedia'>
+                      <img src={Instagram} alt="" />
+                      <img src={WhatsApp2} alt="" />
+                      <img src={Linkedin} alt="" />
+                      <img src={Facebook} alt="" />
+                    </figure>
+                  </li>
+                </ul>
+                
             </ul>
           </div>
 
