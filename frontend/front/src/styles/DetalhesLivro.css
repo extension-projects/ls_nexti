@@ -88,7 +88,10 @@
 
 .container-DetalhesLivro .container-livros .livros .pequeno{
     scale: 0.8;
-    
+}
+
+.container-DetalhesLivro .container-livros .livros .pequeno:hover{
+    scale: 0.9;
 }
 
 .container-DetalhesLivro .container-livros .livros .pequeno p{
