@@ -114,9 +114,6 @@ function Home () {
                           
                           ))}
                       </div>  
-
-
-
               </section>
 
               <section className="container-editorial-section">
