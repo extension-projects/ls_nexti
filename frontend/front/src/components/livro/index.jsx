@@ -11,8 +11,12 @@ export function Livro ({ capa, nome, className, livroId}) {
         return <p>Livro não encontrado.</p>;
     }
 
+    function Subir() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
-        <Link className={`container-livro ${className || ''}`} to={`/livro/${livro.id}`}>     
+        <Link className={`container-livro ${className || ''}`} to={`/livro/${livro.id}`} onClick={Subir()}>     
             <img src={capa} alt="" />
             <p>{nome}</p>
             <Link to={`/livro/${livro.id}`} className='ancoragem'>Saiba Mais</Link>
