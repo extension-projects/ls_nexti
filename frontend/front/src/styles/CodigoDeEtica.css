@@ -26,6 +26,7 @@
     color: #565A61;
 
 }
+
 @media (max-width: 480px) {
 
     .container-codigo h2{
@@ -34,6 +35,10 @@
 
     .container-codigo p {
         font-size: 3.2vw;
+    }
+
+    .container-codigo ul li {
+        font-size: 3.4vw;
     }
 
 }
@@ -48,6 +53,8 @@
         font-size: 3.2vw;
     }
 
-
+    .container-codigo ul li {
+        font-size: 3.4vw;
+    }
 }
 
