@@ -101,6 +101,7 @@ header {
 
 .header .profile p a{
     color: #213E60;
+    text-decoration: none;
 }
 
 .header .profile img{

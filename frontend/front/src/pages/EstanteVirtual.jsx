@@ -16,6 +16,8 @@ import ImgLivro6 from "../assets/img/capasLivros/Introducao_tecnologias.png"
 
 
 function EstanteVirtual () {
+
+
     return (
         <>
             <ScrollToTop/>

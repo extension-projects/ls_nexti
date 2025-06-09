@@ -48,6 +48,14 @@ footer figure{
     font-size: 1.2vw;
 
     margin-bottom: 10px;
+
+    transition: 0.2s;
+}
+
+.footerContent ul li:hover{
+    scale: 1.05;
+    color: #EB973E;
+
 }
 
 .footerContent ul{

@@ -143,14 +143,6 @@ export function Footer() {
               <Link to={'/perguntas-frequentes'}>
                 <li>FAQ</li>
               </Link>
-
-              <Link onClick={() => Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-              })}>
-                <li>Termos</li>
-              </Link>
             </ul>
           </div>
 
@@ -158,14 +150,17 @@ export function Footer() {
             <h4>Contato</h4>
             <ul>
                 <li>(88) 97433-7571</li>
-                <li>
-                  <figure className='socialmedia'>
-                    <img src={Instagram} alt="" />
-                    <img src={WhatsApp2} alt="" />
-                    <img src={Linkedin} alt="" />
-                    <img src={Facebook} alt="" />
-                  </figure>
-                </li>
+                <ul>
+                  <li>
+                    <figure className='socialmedia'>
+                      <img src={Instagram} alt="" />
+                      <img src={WhatsApp2} alt="" />
+                      <img src={Linkedin} alt="" />
+                      <img src={Facebook} alt="" />
+                    </figure>
+                  </li>
+                </ul>
+                
             </ul>
           </div>
 

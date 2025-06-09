@@ -94,6 +94,11 @@ section.container-servicos {
       font-weight: 500;
    }
    
+
+   .container-servicos .olProcesso li{
+      font-size: 3vw;
+   }
+   
 }
 
 @media (max-width: 299px){
@@ -121,5 +126,9 @@ section.container-servicos {
    .container-servicos ul li{
       font-size: 3.5vw;
       font-weight: 500;
+   }
+
+   .container-servicos .olProcesso li{
+      font-size: 3vw;
    }
 }

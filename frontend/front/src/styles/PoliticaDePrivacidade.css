@@ -51,7 +51,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
     .container-politica .title{
         font-size: 4.8vw;
@@ -62,22 +62,15 @@
     }
 
     .container-politica p {
-        font-size: 2.6vw;
-    }
-
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-    .container-politica .title{
-        font-size: 4.8vw;
-    }
-
-    .container-politica .subtitle{
         font-size: 3vw;
     }
 
-    .container-politica p {
-        font-size: 2.6vw;
+    .container-politica ul li{
+        font-size: 3vw;
+    }
+
+    .container-politica .ulExterno li{
+        font-size: 3vw;
     }
 
 }
