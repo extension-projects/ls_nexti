@@ -49,11 +49,6 @@ section.sobreNosContent {
     font-weight: bold;
 }
 
-.container-sobrenos .info .Logo{
-    width: 20vw;
-    margin: 0px;
-}
-
 @media (max-width: 480px) {
 
     section.sobreNosContent{

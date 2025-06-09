@@ -143,14 +143,6 @@ export function Footer() {
               <Link to={'/perguntas-frequentes'}>
                 <li>FAQ</li>
               </Link>
-
-              <Link onClick={() => Swal.fire({
-                icon: "error",
-                title: "Oops...",
-                text: "Essa funcionalidade está indisponível no momento. Estamos trabalhando para resolver isso",
-              })}>
-                <li>Termos</li>
-              </Link>
             </ul>
           </div>
 

@@ -118,9 +118,9 @@ function Home () {
 
               <section className="container-editorial-section">
                   <div>
-                      <h3>CONHEÇA NOSSO <br /><span style={{ color: "#213E60" }}>CORPO EDITORIAL</span></h3>
+                      <h3>COMO PUBLICAR <br /><span style={{ color: "#213E60" }}>SEU LIVRO</span></h3>
                       <p>Conheça a equipe por trás das palavras! Nosso corpo editorial é a engrenagem que impulsiona a qualidade e a precisão em cada texto.</p>
-                      <Link to={"/corpo-editorial"}><button>Saiba mais</button></Link>
+                      <Link to={"/submeter-material"}><button>Saiba mais</button></Link>
                   </div>
 
                   <img src={ImgCorpoEditorial} alt="" />
