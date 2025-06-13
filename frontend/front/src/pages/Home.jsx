@@ -129,6 +129,8 @@ function Home () {
             </div>
             
             <Footer />
+
+            <ScrollToTop showButton />
         </div>
     )
 }
