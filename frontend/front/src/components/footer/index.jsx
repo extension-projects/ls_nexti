@@ -186,7 +186,7 @@ export function Footer() {
 
       <hr />
 
-      <p>© 2020-{new Date().getFullYear()} Editora Learn Skills Created by NExTI</p>
+      <p>© 2020-{new Date().getFullYear()} Editora Learn Skills Created by <a href="https://nexti.fapce.edu.br">NExTI</a></p>
 
     </footer>
   )
