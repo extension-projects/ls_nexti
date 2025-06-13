@@ -91,6 +91,17 @@ footer .socialmedia{
     justify-content: start;
 }
 
+footer .esquerda ul .icon{
+    transition: transform 0.3s, fill 0.3s;
+    fill: white;
+    transform: scale(0.8);
+}
+
+footer .esquerda ul .icon:hover{
+    fill: orange;
+    transform: scale(0.9);
+}
+
 @media (max-width: 480px) {
 
     footer{
