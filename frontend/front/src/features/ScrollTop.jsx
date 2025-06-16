@@ -31,7 +31,7 @@ const ScrollToTop = ({ autoScroll = false }) => {
         bottom: "30px",
         right: "30px",
         padding: "15px",
-        background: "#111",
+        background: "#213E70",
         border: "none",
         borderRadius: "12px",
         cursor: "pointer",
