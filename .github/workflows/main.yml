@@ -1,0 +1,79 @@
+name: Deploy Frontend to FTP Server
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/main.yml'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        cache-dependency-path: frontend/front/package-lock.json
+        
+    - name: Install dependencies
+      run: |
+        cd frontend/front
+        npm ci
+        
+    - name: Build frontend
+      run: |
+        cd frontend/front
+        npm run build
+        
+    - name: Deploy to FTP server
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: frontend/front/dist/
+        server-dir: ${{ secrets.FTP_SERVER_DIR }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.DS_Store
+          **/Thumbs.db
+          **/.vscode/**
+          **/.idea/**
+          **/*.log
+          **/README.md
+          **/.env*
+          **/package*.json
+          **/vite.config.js
+          **/tailwind.config.js
+          **/postcss.config.js
+          **/eslint.config.js
+          **/jsconfig.json
+          **/src/**
+          **/public/**
+          **/.eslintrc*
+          **/.prettierrc*
+          **/tsconfig.json
+          **/cypress/**
+          **/tests/**
+          **/test/**
+          **/__tests__/**
+          **/*.test.js
+          **/*.test.jsx
+          **/*.test.ts
+          **/*.test.tsx
+          **/*.spec.js
+          **/*.spec.jsx
+          **/*.spec.ts
+          **/*.spec.tsx
+        log-level: verbose
+        dangerous-clean-slate: false

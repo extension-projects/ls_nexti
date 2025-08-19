@@ -1,0 +1,83 @@
+.container-editorial {
+  padding: 0 6vw 0vw 6vw;
+ 
+}
+
+.container-editorial h1{
+  color: #213E60;
+  font-size: 2rem;
+}
+
+.container-editorial p{
+  font-size: 1.2rem;
+}
+
+.container-editorial figure{
+  width: 50vw;
+  height: 33vw;
+
+  margin: 0;
+
+  border-radius: 5vw 0 5vw 0;
+  background: #213E60;
+}
+
+.container-editorial .area{
+  display: flex;
+  margin-bottom: 5vw;
+  
+  align-items: center;
+}
+
+.container-editorial .area1{
+  margin-top: 5vw;
+}
+
+.container-editorial .area .direita{
+  margin-left: 2vw;
+  
+}
+
+.container-editorial .area .esquerda{
+  margin-right: 2vw;
+  
+}
+
+.container-editorial .area .textos{
+  width: 50vw;
+}
+
+
+@media (max-width: 768px) {
+  
+  .container-editorial .area {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .container-editorial .area2{ 
+    flex-direction: column-reverse;
+  }
+
+  .container-editorial .area .textos{
+    width: 80vw;
+  }
+
+  .container-editorial figure{
+    width: 80vw;
+    height: 44vw;
+  }
+
+  .container-editorial .area .direita{
+    margin-left: 0vw;
+    
+  }
+
+  .container-editorial .area .esquerda{
+    margin-right: 0vw;
+    
+  }
+}
