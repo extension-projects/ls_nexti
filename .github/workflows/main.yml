@@ -43,11 +43,13 @@ jobs:
         
     - name: Clean existing dist files
       run: |
-        # Remove arquivos antigos do build (exceto .git)
-        find . -name "*.html" -not -path "./.git/*" -delete
-        find . -name "*.js" -not -path "./.git/*" -not -path "./frontend/front/dist/*" -delete
-        find . -name "*.css" -not -path "./.git/*" -not -path "./frontend/front/dist/*" -delete
-        find . -name "assets" -type d -not -path "./.git/*" -not -path "./frontend/front/dist/assets" -exec rm -rf {} + 2>/dev/null || true
+        # Remove arquivos antigos do build (exceto .git, node_modules e frontend)
+        find . -maxdepth 1 -name "*.html" -delete
+        find . -maxdepth 1 -name "*.js" -delete
+        find . -maxdepth 1 -name "*.css" -delete
+        find . -maxdepth 1 -name "assets" -type d -exec rm -rf {} + 2>/dev/null || true
+        find . -maxdepth 1 -name "*.png" -delete
+        find . -maxdepth 1 -name "*.svg" -delete
         
     - name: Copy built files to root
       run: |
